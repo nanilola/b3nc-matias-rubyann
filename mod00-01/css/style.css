@@ -1,6 +1,6 @@
 body {
 	background-color: paleturquoise;
-	background: url("../img/bg2.jpg") no-repeat;
+	background: url("../img/bg.jpg") no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	color: white;
@@ -20,7 +20,7 @@ h1 {
 h2 {
 	font-size: 30px;
 	text-transform: uppercase;
-	color: orange;
+	color: hotpink;
 	letter-spacing: 2px;
 
 
@@ -28,10 +28,10 @@ h2 {
 
 #me {
 	height: 200px;
-	border-radius: 50%;
+	border-radius: 70%;
 	border-style: solid;
 	border-width: 5px;
-	border-color: orange;
+	border-color: hotpink;
 	margin-top: 50px;
 	letter-spacing: 2px;
 }
