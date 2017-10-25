@@ -1,6 +1,6 @@
 body {
 	background-color: paleturquoise;
-	background: url("../img/bg.jpg") no-repeat;
+	background: url("../img/bg0.jpg") no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	color: white;
@@ -13,14 +13,14 @@ p {
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 40px;
 	letter-spacing: 2px;
 }
 
 h2 {
-	font-size: 30px;
+	font-size: 35px;
 	text-transform: uppercase;
-	color: hotpink;
+	color: blue;
 	letter-spacing: 2px;
 
 
@@ -31,7 +31,7 @@ h2 {
 	border-radius: 10%;
 	border-style: solid;
 	border-width: 5px;
-	border-color: hotpink;
+	border-color: blue;
 	margin-top: 50px;
 	letter-spacing: 2px;
 }
@@ -43,7 +43,7 @@ h2 {
 }
 
 .container {
-	width: 500px;
+	width: 600px;
 	margin: 0 auto;
 	text-align: center;
 }
