@@ -14,7 +14,8 @@
 		.header {
 			background-color: cornflowerblue;
 			color: white;
-			text-align: center
+			text-align: center;
+			text-transform: uppercase;
 		}
 
 		.footer {
@@ -31,47 +32,92 @@
 
 </head>
 <body>
-	<div>
-		<header class="header">
-			<h1>TUITT CODING BOOTCAMP</h1>
-		</header>
+	<header class="header">
+		<h1>Tuitt Coding Bootcamp</h1>
+	</header>
 
-		<nav>
-			<button type="button"><i class="fa fa-home fa-fw"></i>Dashboard</button>
-			<button type="button"><i class="fa fa-file-text"></i>5 posts</button>
-			<button type="button"><i class="fa fa-picture-o"></i>13 images</button>
-		</nav>
+	<main>
+		<!-- Dashboard -->
+		<div>
+			<h3><i class="fa fa-home fa-fw" aria-hidden="true"></i>Dashboard</h3>
+		</div>
 
-		<main>
-			<div>
-				<form action="" method="">
-					<i class="fa fa-plus-circle fa-fw"></i>
-					<label>New Post</label>
-					<br>
-					<textarea class="post" placeholder="Enter your post title" rows="1"></textarea>
-					<br>
-					<textarea class="post" placeholder="Enter post content here" rows="7"></textarea>
-					<br>
-					<input type="submit" name="publish" value="Publish">
-					<br>
-					<i class="fa fa-cloud-upload"></i>
-					<label>Upload Image</label>
-					<br>
-					<button><img src="http://lorempixel.com/output/food-q-c-200-200-6.jpg" alt="vegetables"></button>
-					<button><img src="http://lorempixel.com/output/food-q-c-200-200-4.jpg" alt="sushi"></button>
-					<button><img src="http://lorempixel.com/output/food-q-c-200-200-9.jpg" alt="sandwich"></button>
-					<button><img src="http://lorempixel.com/output/food-q-c-200-200-1.jpg" alt="stew"></button>
-					<button><img src="http://lorempixel.com/output/food-q-c-200-200-7.jpg" alt="nuts"></button>
-					<br>
-					<input type="submit" name="browse" value="Browse">
-					<input type="submit" name="upload" value="Upload">
-				</form>
-			</div>
-		</main>
+		<!-- icon for posts -->
+		<div>
+			<i class="fa fa-file-text" aria-hidden="true"></i>
+		</div>
 
-		<footer class="footer">
-			<span>Tuitt Coding Bootcamp &copy; 2017</span>
-		</footer>
-	</div>
+		<div>
+			<p>5</p>
+			<p>posts</p>
+		</div>
+
+		<!-- icon for images -->
+		<div>
+			<i class="fa fa-picture-o" aria-hidden="true"></i>
+		</div>
+
+		<div>
+			<p>13</p>
+			<p>images</p>
+		</div>
+			
+		<!-- New Post -->
+		<div>
+			<h3>
+				<i class="fa fa-plus-circle fa-fw" aria-hidden="true"></i>New Post
+			</h3>
+			<form action="" method="">
+				<input class="post" type="text" name="" placeholder="Enter your post title">
+				<textarea class="post" placeholder="Enter post content here" rows="7"></textarea>
+				<input type="submit" name="" value="Publish">
+			</form>
+		</div>
+
+		<!-- Upload Image -->
+		<div>
+			<h3>
+				<i class="fa fa-cloud-upload"></i>Upload Image
+			</h3>
+			<ul>
+				<li>
+					<a href="#">
+						<img src="http://lorempixel.com/output/food-q-c-200-200-6.jpg" alt="vegetables">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://lorempixel.com/output/food-q-c-200-200-4.jpg" alt="sushi">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://lorempixel.com/output/food-q-c-200-200-9.jpg" alt="sandwich">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://lorempixel.com/output/food-q-c-200-200-1.jpg" alt="stew">
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						<img src="http://lorempixel.com/output/food-q-c-200-200-7.jpg" alt="nuts">
+					</a>
+				</li>
+			</ul>
+
+			<form action="" method="">
+				<input type="file" name="" hidden>
+				<button type="button">Browse</button>
+				<button type="submit">Upload</button>
+			</form>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<span>Tuitt Coding Bootcamp &copy; 2017</span>
+	</footer>
+	
 </body>
 </html>
