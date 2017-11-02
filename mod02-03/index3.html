@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=devide-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title>DOM Activity 3</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+		.header {
+			background-color: cornflowerblue;
+			color: white;
+			text-align: center
+		}
+
+		.footer {
+			background-color: gray;
+			color: white;
+			text-align: center
+		}
+
+		.post {
+			width: 100%
+		}
+
+	</style>
+
+</head>
+<body>
+	<div>
+		<header class="header">
+			<h1>TUITT CODING BOOTCAMP</h1>
+		</header>
+
+		<nav>
+			<button type="button"><i class="fa fa-home fa-fw"></i>Dashboard</button>
+			<button type="button"><i class="fa fa-file-text"></i>5 posts</button>
+			<button type="button"><i class="fa fa-picture-o"></i>13 images</button>
+		</nav>
+
+		<main>
+			<div>
+				<form action="" method="">
+					<i class="fa fa-plus-circle fa-fw"></i>
+					<label>New Post</label>
+					<br>
+					<textarea class="post" placeholder="Enter your post title" rows="1"></textarea>
+					<br>
+					<textarea class="post" placeholder="Enter post content here" rows="7"></textarea>
+					<br>
+					<input type="submit" name="publish" value="Publish">
+					<br>
+					<i class="fa fa-cloud-upload"></i>
+					<label>Upload Image</label>
+					<br>
+					<button><img src="http://lorempixel.com/output/food-q-c-200-200-6.jpg" alt="vegetables"></button>
+					<button><img src="http://lorempixel.com/output/food-q-c-200-200-4.jpg" alt="sushi"></button>
+					<button><img src="http://lorempixel.com/output/food-q-c-200-200-9.jpg" alt="sandwich"></button>
+					<button><img src="http://lorempixel.com/output/food-q-c-200-200-1.jpg" alt="stew"></button>
+					<button><img src="http://lorempixel.com/output/food-q-c-200-200-7.jpg" alt="nuts"></button>
+					<br>
+					<input type="submit" name="browse" value="Browse">
+					<input type="submit" name="upload" value="Upload">
+				</form>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<span>Tuitt Coding Bootcamp &copy; 2017</span>
+		</footer>
+	</div>
+</body>
+</html>
