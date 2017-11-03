@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=devide-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+	<title>CSS Prep Course</title>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<header>
+			<h1>Non-sponsored Food Reviews</h1>
+		</header>
+
+		<main>
+			<!-- Dashboard -->
+			<div class="main-dashboard ">
+				<h3 class="inline-blocked"><i class="fa fa-home fa-fw" aria-hidden="true"></i>Dashboard</h3>
+
+				<!-- icon for posts -->
+				<div class="dashboard-thumbnail">
+					<div id="postCircle" class="dashboard-circles">
+						<i class="fa fa-file-text" aria-hidden="true"></i>
+					</div>
+				
+
+					<div class="inline-blocked">
+						<p class="dashboard-text">5</p>
+						<p class="dashboard-text">posts</p>
+					</div> 
+				</div>
+
+				<!-- icon for images -->
+				<div class="dashboard-thumbnail">
+					<div id="imageCircle" class="dashboard-circles">
+						<i class="fa fa-picture-o" aria-hidden="true"></i>
+					</div>
+
+					<div class="inline-blocked">
+						<p class="dashboard-text">13</p>
+						<p class="dashboard-text">images</p>
+					</div>
+				</div>
+			</div>
+				
+			<!-- New Post -->
+			<div class="newpost-dashboard">
+				<h3 class="inline-blocked">
+					<i class="fa fa-plus-circle fa-fw" aria-hidden="true"></i>New Post
+				</h3>
+				<form class="hide-overflow" action="" method="">
+					<input id="postTitle" class="post" type="text" name="" placeholder="Enter your post title">
+					<textarea id="postContent" class="post" placeholder="Enter post content here"></textarea>
+					<button id="btnPublish" class="btn btn-blue" type="button" name="button">Publish</button>
+				</form>
+			</div>
+
+			<!-- Upload Image -->
+			<div>
+				<h3 class="inline-blocked">
+					<i class="fa fa-cloud-upload"></i>Upload Image
+				</h3>
+				
+				<div class="img-set-holder" >
+					<img class="img-set" src="http://lorempixel.com/output/food-q-c-200-200-6.jpg" alt="vegetables">
+					<img class="img-set" src="http://lorempixel.com/output/food-q-c-200-200-4.jpg" alt="sushi">
+					<img class="img-set" src="http://lorempixel.com/output/food-q-c-200-200-9.jpg" alt="sandwich">
+					<img class="img-set" src="http://lorempixel.com/output/food-q-c-200-200-1.jpg" alt="stew">
+					<img class="img-set" src="http://lorempixel.com/output/food-q-c-200-200-7.jpg" alt="nuts">
+				</div>
+				
+				<form class="hide-overflow" action="" method="">
+					<input type="file" name="" hidden>
+					<button id="btnBrowse" class="btn btn-green" type="button">Browse</button>
+					<button id="btnUpload" class="btn btn-blue" type="submit">Upload</button>
+				</form>
+			</div>
+		</main>
+
+		<footer>
+			<span>Non-sponsored Food Reviews &copy; 2017 Ruby Ann Y. Matias</span>
+		</footer>
+	</div>
+</body>
+</html>
