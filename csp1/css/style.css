@@ -1,0 +1,776 @@
+/* Gallery */
+
+.gal-container{
+  padding: 12px;
+}
+
+.gal-item{
+  overflow: hidden;
+  padding: 3px;
+}
+
+/*.gal-item .box{
+  height: 250px;
+  overflow: hidden;
+}*/
+
+.box img{
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  -o-object-fit:cover;
+}
+
+.gal-item a:focus{
+  outline: none;
+}
+
+.gal-item a:after{
+  content:"\e003";
+  font-family: 'Glyphicons Halflings';
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  right: 3px;
+  left: 3px;
+  top: 3px;
+  bottom: 3px;
+  text-align: center;
+    line-height: 350px;
+    font-size: 30px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.gal-item a:hover:after{
+  opacity: 1;
+}
+
+.modal-open .gal-container .modal{
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-open .gal-item .modal-body{
+  padding: 0px;
+}
+
+.modal-open .gal-item button.close{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    opacity: 1;
+    color: #fff;
+    z-index: 999;
+    right: -12px;
+    top: -12px;
+    border-radius: 50%;
+    font-size: 15px;
+    border: 2px solid #fff;
+    line-height: 25px;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+  box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+}
+
+.modal-open .gal-item button.close:focus{
+  outline: none;
+}
+
+.modal-open .gal-item button.close span{
+  position: relative;
+  top: -3px;
+  font-weight: lighter;
+  text-shadow:none;
+}
+
+.gal-container .modal-dialogue{
+  width: 80%;
+}
+
+.gal-container .description{
+  position: relative;
+  height: 40px;
+  top: -40px;
+  padding: 10px 25px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  text-align: left;
+}
+
+.gal-container .description h4{
+  margin: 0px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.gal-container .modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 100px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.gal-container .modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -100px, 0);
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+.gal-container .modal-dialog {
+    width: 55%;
+    margin: 50 auto;
+}
+}
+@media (max-width: 768px) {
+    .gal-container .modal-content{
+        height: 250px;
+    }
+}
+
+/*Custom CSS*/
+
+ul.nav > li > a.wander {
+	color: #ffcccc;
+}
+
+.wander {
+	padding-top: 40px;
+	width: 100%;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+.maintabs,
+.well {
+	min-height: 500px;
+}
+
+.japan {
+	padding-bottom: 100px;
+}
+
+/* Privacy Policy */
+
+.home,
+.privacy {
+	background-image: url('../img/pastelmap.jpg');
+	height: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	min-height: 1200px;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+.policy {
+	position: absolute;
+	left: 50%;
+	top: 20%;
+	transform: translate(-50%, -20%);
+	font-size: 1em;
+	background-color: white;
+	opacity: 0.8;
+	padding: 10px;
+}
+
+a[href*="privacy"] {
+	color: black;
+}
+
+/* Home Page */
+
+.subscribe {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 1.5em;
+	background-color: white;
+	opacity: 0.8;
+	padding: 10px;
+}
+
+.subscribe > form > input,
+.subscribe > form > button {
+	margin-bottom: 20px;
+	border: 2px solid black;
+}
+
+.well > img[src*="vsomLogo"] {
+	margin-bottom: 50px;
+	width: 20%;
+	height: auto;
+}
+
+.screening ~ p {
+	margin-top: 30px;
+}
+
+img[src*="pastelmap"] {
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+
+.wanderTaiwan > div > .thumbnail {
+	height: 300px;
+	width: 100%;
+}
+
+/*img[src*="explore"] {
+	width: 100%;
+	height: 50%;
+}*/
+
+.carousel-inner > .item > img {
+	width: 100%;
+	height: 100%;
+}
+
+ol.carousel-indicators {
+	margin-bottom: 0;
+}
+
+div.carousel-caption {
+	padding: 30px;
+	font-size: 0.75em;
+	font-weight: bold;
+	letter-spacing: 2px;
+}
+
+a:hover {
+	background-color: #ffcccc;
+}
+
+.nav-tabs > li > a[href*="proposal"] {
+	background-color: yellow;
+}
+
+/* NavBar */
+.navbar,
+ul.nav > li.dropdown > ul.dropdown-menu {
+	background-color: #00004d;
+	font-weight: bold;
+}
+
+/* Links */
+ul.nav > li > a[href*="html"],
+li.dropdown > a[href*="#"],
+.navbar-header > a[href*="html"],
+ul.nav > li.dropdown > ul.dropdown-menu > li > a[href*="html"] {
+	color: #ffcccc;
+}
+
+.nav-tabs > li > a {
+	font-weight: bold;
+}
+
+a.socmed > img {
+	border-radius: 40%;
+}
+
+/* Tab Well */
+.tab-pane > .well {
+	background-color: #ccffff;
+}
+
+/* Body */
+body {
+	background-color: #ffe6e6;
+	position: relative;
+}
+
+div.food {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.maintabs {
+	margin-bottom: 50px;
+}
+
+footer {
+	background-color: #00004d;
+	font-weight: bold;
+	color: #ffcccc;
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+	text-align: center;
+}
+
+ul.screening {
+	list-style-type: none;
+	font-style: italic;
+}
+
+span.vsom {
+	font-weight: bold;
+}
+
+p.stay {
+	text-align: justify;
+}
+
+img[src*="airbnb"] {
+	max-width: 100%;
+	height: auto;
+}
+
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*.gal-container {
+	min-height: 2200px;
+}*/
+
+
+/* desktop or large-sized devices */
+@media only screen and (min-width: 901px) {
+
+	.col-lg-1 {
+		width: 8.33%; /* 100% / 12 columns */
+	}
+
+	.col-lg-2 {
+		width: 16.66%; /* 8.33% x 2 columns */
+	}
+
+	.col-lg-3 {
+		width: 25%;
+	}
+
+	.col-lg-4 {
+		width: 33.33%;
+	}
+
+	.col-lg-5 {
+		width: 41.66%;
+	}
+
+	.col-lg-6 {
+		width: 50%;
+	}
+
+	.col-lg-7 {
+		width: 58.33%;
+	}
+
+	.col-lg-8 {
+		width: 66.66%;
+	}
+
+	.col-lg-9 {
+		width: 75%;
+	}
+
+	.col-lg-10 {
+		width: 83.33%;
+	}
+
+	.col-lg-11 {
+		width: 91.66%;
+	}
+
+	.col-lg-12 {
+		width: 100%
+	}
+
+	IMG[src*="taichung"],
+	IMG[src*="beitou"] {
+		width: 100%;
+		min-height: 262px;
+	}
+
+	IMG[src*="tokyo"] {
+		width: 100%;
+		max-height: 234px;
+	}
+
+	div.taiwan .thumbnail {
+		height: 616px;
+	}
+
+	div.japan .thumbnail {
+		height: 615px;
+	}
+
+	.slides {
+		margin-top: 370px;
+	}
+
+	div.food img {
+		height: 250px;
+	}
+
+	img[src*="vsomLogo"] {
+		height: 40px;
+		width: 10%;
+	}
+
+	.well {
+		font-size: 1.5em;
+	}
+
+	.privacy {
+		min-height: 1000px;
+		margin-top: 100px;
+	}	
+
+	h3.stay {
+		margin-top: 180px;
+	}	
+
+	figure.airbnb {
+		margin-top: 180px;
+	}
+
+	.gal-container {
+		margin-top: 140px;
+	}
+
+	.gal-item .box {
+		height: 250px;
+		overflow: hidden;
+	}
+
+	section > .gal-container > .gal-item > .box {
+		height: 300px;
+		overflow: hidden;
+	}
+
+	section {
+		margin-bottom: 50px;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 900px) {
+
+	.col-md-1 {
+		width: 8.33%; /* 100% / 12 columns */
+	}
+
+	.col-md-2 {
+		width: 16.66%; /* 8.33% x 2 columns */
+	}
+
+	.col-md-3 {
+		width: 25%;
+	}
+
+	.col-md-4 {
+		width: 33.33%;
+	}
+
+	.col-md-5 {
+		width: 41.66%;
+	}
+
+	.col-md-6 {
+		width: 50%;
+	}
+
+	.col-md-7 {
+		width: 58.33%;
+	}
+
+	.col-md-8 {
+		width: 66.66%;
+	}
+
+	.col-md-9 {
+		width: 75%;
+	}
+
+	.col-md-10 {
+		width: 83.33%;
+	}
+
+	.col-md-11 {
+		width: 91.66%;
+	}
+
+	.col-md-12 {
+		width: 100%
+	}
+
+	IMG[src*="taichung"] {
+		width: 100%;
+		height: 157px;
+	}
+
+	IMG[src*="tokyo"] {
+		width: 100%;
+		max-height: 140px;
+	}
+
+	div.taiwan .thumbnail {
+		height: 616px;
+	}
+
+	div.japan .thumbnail {
+		height: 609px;
+	}
+
+	.slides {
+		margin-top: 120px;
+	}
+
+	div.food img {
+		height: 141px;
+	}
+
+	img[src*="vsomLogo"] {
+		height: 30px;
+		width: 10%;
+	}
+
+	.well {
+		font-size: 2em;
+	}
+
+	.home {
+		min-height: 1200px;
+	}
+
+	.privacy {
+		min-height: 1200px;
+		margin-top: 100px;
+	}
+
+	h3.stay {
+		margin-top: 200px;
+	}	
+
+	figure.airbnb {
+		margin-top: 200px;
+	}
+
+	.gal-container {
+		margin-top: 180px;
+	}
+
+	.gal-item .box {
+		height: 200px;
+		overflow: hidden;
+	}
+
+	section {
+		margin-bottom: 50px;
+	}
+
+	a.socmed > img {
+		width: 32px;
+		height: 32px;
+		margin-right: 3px;
+	}
+}
+
+/* iPhone 7 Plus or iPad Mini */
+@media only screen and (min-width: 401px) and (max-width: 767px) {
+
+	.col-sm-1 {
+		width: 8.33%; /* 100% / 12 columns */
+	}
+
+	.col-sm-2 {
+		width: 16.66%; /* 8.33% x 2 columns */
+	}
+
+	.col-sm-3 {
+		width: 25%;
+	}
+
+	.col-sm-4 {
+		width: 33.33%;
+	}
+
+	.col-sm-5 {
+		width: 41.66%;
+	}
+
+	.col-sm-6 {
+		width: 50%;
+	}
+
+	.col-sm-7 {
+		width: 58.33%;
+	}
+
+	.col-sm-8 {
+		width: 66.66%;
+	}
+
+	.col-sm-9 {
+		width: 75%;
+	}
+
+	.col-sm-10 {
+		width: 83.33%;
+	}
+
+	.col-sm-11 {
+		width: 91.66%;
+	}
+
+	.col-sm-12 {
+		width: 100%
+	}
+
+	.slides {
+		margin-top: 60px;
+	}
+
+	div.food img {
+		height: 268px;
+	}
+
+	img[src*="vsomLogo"] {
+		height: 40px;
+		width: 15%;
+	}
+
+	.well {
+		font-size: 1.2em;
+	}
+
+	.privacy {
+		min-height: 2000px;
+	}
+
+	h3.stay {
+		margin-top: 80px;
+	}	
+
+	figure.airbnb {
+		margin-top: 80px;
+	}
+
+	.gal-container {
+		margin-top: 55px;
+		margin-bottom: 55px;
+	}
+
+	.gal-item .box {
+		height: 200px;
+		overflow: hidden;
+	}
+
+	section {
+		margin-bottom: 70px;
+	}
+}
+
+
+/* mobile or extra-small-sized devices */
+@media only screen and (max-width: 400px) {
+
+	.col-xs-1 {
+		width: 8.33%; /* 100% / 12 columns */
+	}
+
+	.col-xs-2 {
+		width: 16.66%; /* 8.33% x 2 columns */
+	}
+
+	.col-xs-3 {
+		width: 25%;
+	}
+
+	.col-xs-4 {
+		width: 33.33%;
+	}
+
+	.col-xs-5 {
+		width: 41.66%;
+	}
+
+	.col-xs-6 {
+		width: 50%;
+	}
+
+	.col-xs-7 {
+		width: 58.33%;
+	}
+
+	.col-xs-8 {
+		width: 66.66%;
+	}
+
+	.col-xs-9 {
+		width: 75%;
+	}
+
+	.col-xs-10 {
+		width: 83.33%;
+	}
+
+	.col-xs-11 {
+		width: 91.66%;
+	}
+
+	.col-xs-12 {
+		width: 100%
+	}
+
+	.slides {
+		margin-top: 60px;
+	}
+
+	div.food img {
+		height: 124px;
+	}
+
+	img[src*="vsomLogo"] {
+		height: 40px;
+		width: 15%;
+	}
+
+	.well,
+	footer {
+		width: 100%;
+	}
+
+	.privacy {
+		min-height: 2000px;
+	}
+
+	h3.stay {
+		margin-top: 80px;
+	}	
+
+	figure.airbnb {
+		margin-top: 30px;
+	}
+
+	.gal-container {
+		margin-top: 45px;
+		margin-bottom: 55px;
+	}
+
+	.gal-item .box {
+		height: 200px;
+		overflow: hidden;
+	}
+
+	section {
+		margin-bottom: 70px;
+	}
+}
