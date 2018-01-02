@@ -538,6 +538,12 @@
   color: #000;
 }
 
+.btn-success {
+  background-color: rgba(20, 135, 50, 1);
+  font-weight: bolder;
+  border: 2px solid yellow;
+}
+
 #contact > .navi {
   float: right;
   margin-right: 80px;
@@ -876,6 +882,14 @@ svg #fish6 {
 	width: 100%;
 	}
 
+	.banner {
+		background-image: url(../img/xssea.jpg);
+	}
+
+	.sidenav {
+		background-image: url(../img/xsripple.jpg);
+	}
+
 	.name h1 {
 		font-size: 2em;
 	}
@@ -886,6 +900,7 @@ svg #fish6 {
 
 	#skills {
 		height: 110vh;
+		background-image: url(../img/xsjelly.jpg);
 	}
 
 	.progress {
@@ -899,6 +914,10 @@ svg #fish6 {
 	.social > h2 {
 		font-size: 2em;
 		margin-bottom: 40px;
+	}
+
+	#contact {
+		background-image: url(../img/xspebs.jpg);
 	}
 
 }
@@ -958,6 +977,11 @@ svg #fish6 {
 	.banner {
 		height: 103vh;
 		width: 103.5vw;
+		background-image: url(../img/xssea.jpg);
+	}
+
+	.sidenav {
+		background-image: url(../img/xsripple.jpg);
 	}
 
 	.name {
@@ -986,6 +1010,7 @@ svg #fish6 {
 	#skills {
 		height: 115vh;
 		width: 103.5vw;
+		background-image: url(../img/xsjelly.jpg);
 	}
 
 	.progress {
@@ -999,6 +1024,7 @@ svg #fish6 {
 
 	#contact {
 		width: 103.5vw
+		background-image: url(../img/xsripple.jpg);
 	}
 
 	.message {
