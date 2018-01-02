@@ -10,11 +10,6 @@
   clear: both;
 }
 
-img {
-	width: 100%;
-	height: 700px;
-}
-
 .brand {
   border: 5px solid white;
   width: 100px;
@@ -38,7 +33,7 @@ img {
 	position: relative;
 	height: 100vh;
 	width: 100vw;
-  z-index: 0;
+  	z-index: 0;
 }
 
 .name {
@@ -59,8 +54,6 @@ img {
 .navi > a {
   color: #fff;
 }
-
-
 
 #openNav {
   font-size: 30px;
@@ -287,25 +280,6 @@ img {
   }
 }
 
-
-/* Media queries - Responsive timeline on screens less than 600px wide */
-@media all and (max-width: 320px) {
-
-  #about {
-    max-height: 250vh;
-  }
-
-  .name {
-    border-radius: 50px;
-  }
-
-  .name h1,
-  .name h2 {
-    font-size: 1.5em;
-  }
-}
-
-
 /* SKILLS */
 
 #skills {
@@ -317,6 +291,10 @@ img {
   color: white;
   font-size: 1.2em;
   text-align: center;
+}
+
+#skills > h2 {
+  padding-top: 20px;
 }
 
 .progress-bar {
@@ -366,11 +344,19 @@ img {
   overflow: hidden;
 }*/
 
-.box img {
-  max-height: 350px;
-  width: 100%;
+/*.box img {
   object-fit:cover;
   -o-object-fit:cover;
+}*/
+
+.box img[alt="thumb"] {
+	max-height: 300px;
+	max-width: 400px;
+}
+
+.box img[alt="zoom"] {
+	max-height: 540px;
+	max-width: 720px;
 }
 
 .gal-item a:focus {
@@ -388,17 +374,17 @@ img {
   top: 3px;
   bottom: 3px;
   text-align: center;
-    line-height: 350px;
-    font-size: 30px;
-    color: #fff;
-    -webkit-transition: all 0.5s ease-in-out 0s;
-    -moz-transition: all 0.5s ease-in-out 0s;
-    transition: all 0.5s ease-in-out 0s;
+	line-height: 350px;
+	font-size: 30px;
+	color: #fff;
+	-webkit-transition: all 0.5s ease-in-out 0s;
+	-moz-transition: all 0.5s ease-in-out 0s;
+	transition: all 0.5s ease-in-out 0s;
 }
 
-.gal-item a:hover:after {
-  opacity: 1;
-}
+/*.gal-item a:hover:after {
+  opacity: 0.8;
+}*/
 
 .modal-open .gal-container .modal {
   background-color: rgba(0,0,0,0.4);
@@ -438,7 +424,7 @@ img {
 }
 
 .gal-container .modal-dialogue {
-  width: 80%;
+  width: 100%;
 }
 
 .gal-container .description {
@@ -464,7 +450,7 @@ img {
     -ms-transform: scale(0.1);
     transform: scale(0.1);
     top: 100px;
-    opacity: 0;
+    opacity: 1;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -492,11 +478,15 @@ img {
     }
 }
 
+#portfolio > h2 {
+	padding-top: 20px;
+}
+
 .social > h2 {
   letter-spacing: 2px;
   text-decoration: none;
-  margin: 10px;
   font-family: 'Lobster', cursive;
+  margin-top: 30px;
 }
 
 .social > h2 > a {
@@ -701,208 +691,329 @@ svg #fish6 {
 /* RESPONSIVE WEB */
 
 /* desktop or large-sized devices */
+
 @media only screen and (min-width: 900px) {
+  
+	.col-lg-1 {
+		width: 8.33%; /* 100% / 12 columns */
+	}
 
-  .col-lg-1 {
-    width: 8.33%; /* 100% / 12 columns */
-  }
+	.col-lg-2 {
+		width: 16.66%; /* 8.33% x 2 columns */
+	}
 
-  .col-lg-2 {
-    width: 16.66%; /* 8.33% x 2 columns */
-  }
+	.col-lg-3 {
+		width: 25%;
+	}
 
-  .col-lg-3 {
-    width: 25%;
-  }
+	.col-lg-4 {
+		width: 33.33%;
+	}
 
-  .col-lg-4 {
-    width: 33.33%;
-  }
+	.col-lg-5 {
+		width: 41.66%;
+	}
 
-  .col-lg-5 {
-    width: 41.66%;
-  }
+	.col-lg-6 {
+		width: 50%;
+	}
 
-  .col-lg-6 {
-    width: 50%;
-  }
+	.col-lg-7 {
+		width: 58.33%;
+	}
 
-  .col-lg-7 {
-    width: 58.33%;
-  }
+	.col-lg-8 {
+		width: 66.66%;
+	}
 
-  .col-lg-8 {
-    width: 66.66%;
-  }
+	.col-lg-9 {
+		width: 75%;
+	}
 
-  .col-lg-9 {
-    width: 75%;
-  }
+	.col-lg-10 {
+		width: 83.33%;
+	}
 
-  .col-lg-10 {
-    width: 83.33%;
-  }
+	.col-lg-11 {
+		width: 91.66%;
+	}
 
-  .col-lg-11 {
-    width: 91.66%;
-  }
+	.col-lg-12 {
+		width: 100%;
+	}
 
-  .col-lg-12 {
-    width: 100%;
-  }
+}
 
 
 /* iPad and iPad Pro*/
-  @media only screen and (min-width: 768px) and (max-width: 900px) {
+  @media screen and (min-width: 768px) and (max-width: 900px) {
 
-  .col-md-1 {
-    width: 8.33%; /* 100% / 12 columns */
-  }
+	.col-md-1 {
+		width: 8.33%; /* 100% / 12 columns */
+	}
 
-  .col-md-2 {
-    width: 16.66%; /* 8.33% x 2 columns */
-  }
+	.col-md-2 {
+		width: 16.66%; /* 8.33% x 2 columns */
+	}
 
-  .col-md-3 {
-    width: 25%;
-  }
+	.col-md-3 {
+		width: 25%;
+	}
 
-  .col-md-4 {
-    width: 33.33%;
-  }
+	.col-md-4 {
+		width: 33.33%;
+	}
 
-  .col-md-5 {
-    width: 41.66%;
-  }
+	.col-md-5 {
+		width: 41.66%;
+	}
 
-  .col-md-6 {
-    width: 50%;
-  }
+	.col-md-6 {
+		width: 50%;
+	}
 
-  .col-md-7 {
-    width: 58.33%;
-  }
+	.col-md-7 {
+		width: 58.33%;
+	}
 
-  .col-md-8 {
-    width: 66.66%;
-  }
+	.col-md-8 {
+		width: 66.66%;
+	}
 
-  .col-md-9 {
-    width: 75%;
-  }
+	.col-md-9 {
+		width: 75%;
+	}
 
-  .col-md-10 {
-    width: 83.33%;
-  }
+	.col-md-10 {
+		width: 83.33%;
+	}
 
-  .col-md-11 {
-    width: 91.66%;
-  }
+	.col-md-11 {
+		width: 91.66%;
+	}
 
-  .col-md-12 {
-    width: 100%;
-  }
+	.col-md-12 {
+		width: 100%;
+	}
+
+	.name h1 {
+		font-size: 4em;
+	}
+
+	.name h2 {
+		font-size: 2.5em;
+	}
+
+	#skills {
+		height: 80vh;
+	}
+
+	#portfolio {
+		height: 60vh;
+	}
+
+	.box img[alt="thumb"] {
+		height: 200px;
+		width: 100%;
+	}
+
+	.box img[alt="zoom"] {
+		height: 540px;
+		width: 100%;
+	}
+
+ }
 
 
 /* iPhone 7 up to iPhone X */
 @media only screen and (min-width: 375px) and (max-width: 767px) {
 
-  .col-sm-1 {
-    width: 8.33%; /* 100% / 12 columns */
-  }
+	.col-sm-1 {
+	width: 8.33%; /* 100% / 12 columns */
+	}
 
-  .col-sm-2 {
-    width: 16.66%; /* 8.33% x 2 columns */
-  }
+	.col-sm-2 {
+	width: 16.66%; /* 8.33% x 2 columns */
+	}
 
-  .col-sm-3 {
-    width: 25%;
-  }
+	.col-sm-3 {
+	width: 25%;
+	}
 
-  .col-sm-4 {
-    width: 33.33%;
-  }
+	.col-sm-4 {
+	width: 33.33%;
+	}
 
-  .col-sm-5 {
-    width: 41.66%;
-  }
+	.col-sm-5 {
+	width: 41.66%;
+	}
 
-  .col-sm-6 {
-    width: 50%;
-  }
+	.col-sm-6 {
+	width: 50%;
+	}
 
-  .col-sm-7 {
-    width: 58.33%;
-  }
+	.col-sm-7 {
+	width: 58.33%;
+	}
 
-  .col-sm-8 {
-    width: 66.66%;
-  }
+	.col-sm-8 {
+	width: 66.66%;
+	}
 
-  .col-sm-9 {
-    width: 75%;
-  }
+	.col-sm-9 {
+	width: 75%;
+	}
 
-  .col-sm-10 {
-    width: 83.33%;
-  }
+	.col-sm-10 {
+	width: 83.33%;
+	}
 
-  .col-sm-11 {
-    width: 91.66%;
-  }
+	.col-sm-11 {
+	width: 91.66%;
+	}
 
-  .col-sm-12 {
-    width: 100%;
-  }
+	.col-sm-12 {
+	width: 100%;
+	}
+
+	.name h1 {
+		font-size: 2em;
+	}
+
+	.name h2 {
+		font-size: 1.2em;
+	}
+
+	#skills {
+		height: 110vh;
+	}
+
+	.progress {
+		margin-bottom: 15px;
+	}
+
+	#portfolio {
+		height: 200vh;
+	}
+
+	.social > h2 {
+		font-size: 2em;
+		margin-bottom: 40px;
+	}
+
+}
   
 
   /* mobile or extra-small-sized devices */
-@media only screen and (max-width: 400px) {
+@media only screen and (min-width: 320px) and (max-width: 400px) {
 
-  .col-xs-1 {
-    width: 8.33%; /* 100% / 12 columns */
-  }
+	.col-xs-1 {
+	width: 8.33%; /* 100% / 12 columns */
+	}
 
-  .col-xs-2 {
-    width: 16.66%; /* 8.33% x 2 columns */
-  }
+	.col-xs-2 {
+	width: 16.66%; /* 8.33% x 2 columns */
+	}
 
-  .col-xs-3 {
-    width: 25%;
-  }
+	.col-xs-3 {
+	width: 25%;
+	}
 
-  .col-xs-4 {
-    width: 33.33%;
-  }
+	.col-xs-4 {
+	width: 33.33%;
+	}
 
-  .col-xs-5 {
-    width: 41.66%;
-  }
+	.col-xs-5 {
+	width: 41.66%;
+	}
 
-  .col-xs-6 {
-    width: 50%;
-  }
+	.col-xs-6 {
+	width: 50%;
+	}
 
-  .col-xs-7 {
-    width: 58.33%;
-  }
+	.col-xs-7 {
+	width: 58.33%;
+	}
 
-  .col-xs-8 {
-    width: 66.66%;
-  }
+	.col-xs-8 {
+	width: 66.66%;
+	}
 
-  .col-xs-9 {
-    width: 75%;
-  }
+	.col-xs-9 {
+	width: 75%;
+	}
 
-  .col-xs-10 {
-    width: 83.33%;
-  }
+	.col-xs-10 {
+	width: 83.33%;
+	}
 
-  .col-xs-11 {
-    width: 91.66%;
-  }
+	.col-xs-11 {
+	width: 91.66%;
+	}
 
-  .col-xs-12 {
-    width: 100%;
-  }
+	.col-xs-12 {
+	width: 100%;
+	}
+
+	.banner {
+		height: 103vh;
+		width: 103.5vw;
+	}
+
+	.name {
+		margin-top: 70px;
+	}
+
+	.name > h1 {
+		font-size: 1.5em;
+		margin-top: 0;
+	}
+
+	.name > h2 {
+		font-size: 1em;
+		margin-top: 10px;
+	}
+
+	#openNav {
+		font-size: 15px;
+	}
+
+	#about {
+		max-height: 300vh;
+		width: 103.5vw;
+	}
+
+	#skills {
+		height: 115vh;
+		width: 103.5vw;
+	}
+
+	.progress {
+		margin-bottom: 5px;
+	}
+
+	#portfolio {
+		height: 250vh;
+		width: 103.5vw;
+	}
+
+	#contact {
+		width: 103.5vw
+	}
+
+	.message {
+		height: 75vh;
+		width: 95vw;
+	}
+
+	.message > label > h2,
+	.message > label > h3 {
+		font-size: 1.2em;
+		margin: 0;
+	}
+
+	.fa-7x {
+		font-size: 3em;
+	}
+
+}
