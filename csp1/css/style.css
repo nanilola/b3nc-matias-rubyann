@@ -509,7 +509,7 @@ footer {
 	}
 
 	.col-md-12 {
-		width: 100%
+		width: 100%;
 	}
 
 	IMG[src*="taichung"] {
@@ -589,7 +589,7 @@ footer {
 }
 
 /* iPhone 7 Plus or iPad Mini */
-@media only screen and (min-width: 401px) and (max-width: 767px) {
+@media only screen and (min-width: 375px) and (max-width: 767px) {
 
 	.col-sm-1 {
 		width: 8.33%; /* 100% / 12 columns */

@@ -1,0 +1,908 @@
+* {
+	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.clear:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+img {
+	width: 100%;
+	height: 700px;
+}
+
+.brand {
+  border: 5px solid white;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-size: 2.5em;
+  letter-spacing: 3px;
+  line-height: normal;
+}
+
+.banner {
+	background-image: url(../img/sea.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	position: relative;
+	height: 100vh;
+	width: 100vw;
+  z-index: 0;
+}
+
+.name {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  min-height: 25%;
+  margin-top: 100px;
+  margin-left: 25%;
+  letter-spacing: 2px;
+  color: #000033;
+  text-align: center;
+  background: rgba(90, 230, 175, 0.1);
+  border-radius: 5px;
+  font-family: 'Bungee Inline', cursive;
+}
+
+.navi > a {
+  color: #fff;
+}
+
+
+
+#openNav {
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  background-color: #000033;
+  z-index: 1;
+}
+
+.sidenav {
+  height: 100vh;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-image: url(../img/ripple.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: #000033;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: red;
+  font-style: italic;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-right: 50px;
+}
+
+#main {
+  transition: margin-right .5s;
+  /*padding: 16px;*/
+}
+
+@media screen and (max-height: 450px) {
+  
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {font-size: 18px;
+  }
+}
+
+/* ABOUT */
+
+#about {
+  background-color: #660000;
+  width: 100vw;
+  max-height: 150vh;
+  text-align: center;
+}
+
+/* Vertical Ruler */
+
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container Around Content */
+
+.container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+  margin-left: 0; /* to override bootstrap margin auto*/
+}
+
+/* Circles on the Timeline */
+
+.container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: white;
+  border: 4px solid #00997a;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+/* Position of Containers */
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+/* Add Arrows to the Containers */
+
+.left::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+.right::before {
+  content: "";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the Circles for Container on the Right Side */
+
+.right::after {
+  left: -13px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-image: url(../img/ripple.jpg);
+  position: relative;
+  border-radius: 6px;
+  color: #000033;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+.content h3 {
+  color: #660000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Media queries - Responsive timeline on screens less than 768px wide */
+@media all and (max-width: 767px) {
+
+  #about {
+    max-height: 250vh;
+  }
+
+  .box {
+    border-radius: 50px;
+  }
+
+  .box h1,
+  .box h2 {
+    font-size: 1.75em;
+  }
+
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+  
+  /* Full-width containers */
+  .container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+  
+  /* Make sure that all arrows are pointing leftwards */
+  .container::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 18px;
+  }
+  
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media all and (max-width: 320px) {
+
+  #about {
+    max-height: 250vh;
+  }
+
+  .name {
+    border-radius: 50px;
+  }
+
+  .name h1,
+  .name h2 {
+    font-size: 1.5em;
+  }
+}
+
+
+/* SKILLS */
+
+#skills {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/jellyfish.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.progress-bar {
+  min-width: 2em;
+}
+
+#html {
+  width: 50%;
+}
+
+#css {
+  width: 50%;
+}
+
+#js {
+  width: 5%;
+}
+
+#git {
+  width: 10%;
+}
+
+
+/* Portfolio */
+
+#portfolio {
+  width: 100vw;
+  height: 100vh;
+  background-color: darkslategrey;
+  color: white;
+  font-size: 1.2em;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.gal-container {
+  padding: 12px;
+}
+
+.gal-item {
+  overflow: hidden;
+  padding: 3px;
+}
+
+/*.gal-item .box{
+  height: 250px;
+  overflow: hidden;
+}*/
+
+.box img {
+  max-height: 350px;
+  width: 100%;
+  object-fit:cover;
+  -o-object-fit:cover;
+}
+
+.gal-item a:focus {
+  outline: none;
+}
+
+.gal-item a:after {
+  content:"\e003";
+  font-family: 'Glyphicons Halflings';
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+  position: absolute;
+  right: 3px;
+  left: 3px;
+  top: 3px;
+  bottom: 3px;
+  text-align: center;
+    line-height: 350px;
+    font-size: 30px;
+    color: #fff;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.gal-item a:hover:after {
+  opacity: 1;
+}
+
+.modal-open .gal-container .modal {
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-open .gal-item .modal-body {
+  padding: 0px;
+}
+
+.modal-open .gal-item button.close {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    opacity: 1;
+    color: #fff;
+    z-index: 999;
+    right: -12px;
+    top: -12px;
+    border-radius: 50%;
+    font-size: 15px;
+    border: 2px solid #fff;
+    line-height: 25px;
+    -webkit-box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+    box-shadow: 0 0 1px 1px rgba(0,0,0,0.35);
+}
+
+.modal-open .gal-item button.close:focus {
+  outline: none;
+}
+
+.modal-open .gal-item button.close span {
+  position: relative;
+  top: -3px;
+  font-weight: lighter;
+  text-shadow:none;
+}
+
+.gal-container .modal-dialogue {
+  width: 80%;
+}
+
+.gal-container .description {
+  position: relative;
+  height: 40px;
+  top: -40px;
+  padding: 10px 25px;
+  background-color: rgba(0,0,0,0.5);
+  color: #fff;
+  text-align: left;
+}
+
+.gal-container .description h4 {
+  margin: 0px;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 20px;
+}
+
+.gal-container .modal.fade .modal-dialog {
+    -webkit-transform: scale(0.1);
+    -moz-transform: scale(0.1);
+    -ms-transform: scale(0.1);
+    transform: scale(0.1);
+    top: 100px;
+    opacity: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.gal-container .modal.fade.in .modal-dialog {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -100px, 0);
+    opacity: 1;
+}
+
+@media (min-width: 768px) {
+.gal-container .modal-dialog {
+    width: 55%;
+    margin: 50 auto;
+}
+}
+@media (max-width: 768px) {
+    .gal-container .modal-content{
+        height: 300px;
+    }
+}
+
+.social > h2 {
+  letter-spacing: 2px;
+  text-decoration: none;
+  margin: 10px;
+  font-family: 'Lobster', cursive;
+}
+
+.social > h2 > a {
+  text-decoration: underline;
+  color: white;
+}
+
+.social > a {
+  color: white;
+  padding: 5px;
+}
+
+
+/* CONTACT */
+
+#contact {
+  width: 100vw;
+  height: 90vh;
+  background-image: url(../img/pebbles.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+}
+
+.message {
+  width: 75vw;
+  margin: 0 auto;
+  padding: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 5px solid #fff;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%,-50%);
+}
+
+.message > label {
+  background-color: black;
+  border-radius: 10px;
+}
+
+.input-group {
+  padding: 5px;
+}
+
+.input-group-addon {
+  font-weight: bold;
+  color: #000;
+}
+
+#contact > .navi {
+  float: right;
+  margin-right: 80px;
+}
+
+
+/* FOOTER */
+
+ footer {
+    background-color: #000;
+    height: 10vh;
+    width: 100vw;
+    text-align: center;
+    color: #fff;
+    padding-top: 25px;
+ }
+
+
+/* SCHOOL OF FISH */
+
+svg#fish {
+  top: 5em;
+}
+
+/* Fish Animation */
+
+svg.fish {
+  overflow:visible;
+}
+
+@-webkit-keyframes swim {
+	0% {margin-left: -235px}
+	90% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+@keyframes swim {
+	0% {margin-left: -235px}
+	70% {margin-left: 100%;}
+	100% {margin-left: 100%;}
+}
+
+.fish {
+	width: 235px;
+	height: 104px;
+	margin-left: -235px;
+	position: absolute;	
+	animation: swim 20s;
+	-webkit-animation: swim 20s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	-webkit-animation-timing-function: linear;
+}
+
+svg #fish1,
+svg #fish2,
+svg #fish3,
+svg #fish4,
+svg #fish5,
+svg #fish6 {
+  fill:#528484;
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+svg #fish2 {
+	animation-delay: 0.5s;
+	-webkit-animation-delay: 0.5s;
+}
+
+svg #fish3 {
+	animation-delay: 0.2s;
+	-webkit-animation-delay: 0.2s;
+}
+
+svg #fish4 {
+	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.4s;
+}
+
+svg #fish5 {
+	animation-delay: 0.1s;
+	-webkit-animation-delay: 0.1s;
+}
+
+svg #fish6 {
+	animation-delay: 0.3s;
+	-webkit-animation-delay: 0.3s;
+}
+
+/**/
+@-moz-keyframes bounce {
+  0%, 50%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  25% {
+    -moz-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  75% {
+    -moz-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 50%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  25% {
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  75% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+
+@keyframes bounce {
+  0%, 50%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  25% {
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+
+  75% {
+    -moz-transform: translateY(-3px);
+    -ms-transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+}
+
+
+/* RESPONSIVE WEB */
+
+/* desktop or large-sized devices */
+@media only screen and (min-width: 900px) {
+
+  .col-lg-1 {
+    width: 8.33%; /* 100% / 12 columns */
+  }
+
+  .col-lg-2 {
+    width: 16.66%; /* 8.33% x 2 columns */
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 75%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+
+/* iPad and iPad Pro*/
+  @media only screen and (min-width: 768px) and (max-width: 900px) {
+
+  .col-md-1 {
+    width: 8.33%; /* 100% / 12 columns */
+  }
+
+  .col-md-2 {
+    width: 16.66%; /* 8.33% x 2 columns */
+  }
+
+  .col-md-3 {
+    width: 25%;
+  }
+
+  .col-md-4 {
+    width: 33.33%;
+  }
+
+  .col-md-5 {
+    width: 41.66%;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  .col-md-7 {
+    width: 58.33%;
+  }
+
+  .col-md-8 {
+    width: 66.66%;
+  }
+
+  .col-md-9 {
+    width: 75%;
+  }
+
+  .col-md-10 {
+    width: 83.33%;
+  }
+
+  .col-md-11 {
+    width: 91.66%;
+  }
+
+  .col-md-12 {
+    width: 100%;
+  }
+
+
+/* iPhone 7 up to iPhone X */
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+
+  .col-sm-1 {
+    width: 8.33%; /* 100% / 12 columns */
+  }
+
+  .col-sm-2 {
+    width: 16.66%; /* 8.33% x 2 columns */
+  }
+
+  .col-sm-3 {
+    width: 25%;
+  }
+
+  .col-sm-4 {
+    width: 33.33%;
+  }
+
+  .col-sm-5 {
+    width: 41.66%;
+  }
+
+  .col-sm-6 {
+    width: 50%;
+  }
+
+  .col-sm-7 {
+    width: 58.33%;
+  }
+
+  .col-sm-8 {
+    width: 66.66%;
+  }
+
+  .col-sm-9 {
+    width: 75%;
+  }
+
+  .col-sm-10 {
+    width: 83.33%;
+  }
+
+  .col-sm-11 {
+    width: 91.66%;
+  }
+
+  .col-sm-12 {
+    width: 100%;
+  }
+  
+
+  /* mobile or extra-small-sized devices */
+@media only screen and (max-width: 400px) {
+
+  .col-xs-1 {
+    width: 8.33%; /* 100% / 12 columns */
+  }
+
+  .col-xs-2 {
+    width: 16.66%; /* 8.33% x 2 columns */
+  }
+
+  .col-xs-3 {
+    width: 25%;
+  }
+
+  .col-xs-4 {
+    width: 33.33%;
+  }
+
+  .col-xs-5 {
+    width: 41.66%;
+  }
+
+  .col-xs-6 {
+    width: 50%;
+  }
+
+  .col-xs-7 {
+    width: 58.33%;
+  }
+
+  .col-xs-8 {
+    width: 66.66%;
+  }
+
+  .col-xs-9 {
+    width: 75%;
+  }
+
+  .col-xs-10 {
+    width: 83.33%;
+  }
+
+  .col-xs-11 {
+    width: 91.66%;
+  }
+
+  .col-xs-12 {
+    width: 100%;
+  }
