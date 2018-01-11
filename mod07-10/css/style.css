@@ -1,0 +1,89 @@
+.clear {
+	content: "";
+	clear: both;
+	display: block;
+}
+
+body {
+	background: url(../img/raindrops.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100vw;
+	height: 100vh;
+}
+
+#container {
+	background: rgba(155, 205, 255, 0.1);
+	width: 40vw;
+	margin: 0 auto;
+	border: 2px solid #b36b00;
+	border-radius: 30px;
+	position: relative;
+	top: 30%;
+	transform: translateY(-30%);
+}
+
+.completed {
+	color: grey;
+	text-decoration: line-through;
+}
+
+/* Delete Button */
+span {
+	background-color: #ff5050;
+	margin-right: 20px;
+	width: 0;
+	opacity: 0;
+	transition: 0.2s linear;
+	display: inline-block;
+}
+
+li:hover span {
+	width: 40px;
+	opacity: 1;
+}
+h1 {
+	background-color: #b36b00;
+	color: white;
+	padding-left: 40px;
+}
+
+.addTask {
+	margin-left: 40px;
+	border-width: thick;
+	width: 73%;
+}
+
+li {
+	border: 5px solid #b36b00;
+	width: 80%;
+	list-style: none;
+	background-color: #fff;
+}
+
+.fa-plus {
+	float: right;
+	padding-right: 80px;
+}
+
+@media screen and (min-width: 319px) and (max-width: 415px) {
+
+	#container {
+		width: 85vw;
+	}
+
+	.fa-plus {
+		padding-right: 30px;
+	}
+
+	.addTask {
+		margin-left: 30px;
+	}
+}
+
+@media screen and (min-width: 767px) and (max-width: 1279px) {
+
+	.fa-plus {
+		padding-right: 40px;
+	}
+}
