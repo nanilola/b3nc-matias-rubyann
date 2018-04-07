@@ -7,16 +7,20 @@
 
 	<title>Vacay State of Mind</title>
 
+	<link href="https://fonts.googleapis.com/css?family=Mystery+Quest|Paprika" rel="stylesheet">
+
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<link href="sakura/jquery-sakura.css" rel="stylesheet" type="text/css">
 	
 	<!-- import bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
 	<!-- import jquery -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="lib/jquery-3.2.1.min.js"></script>
 
 	<!-- import bootstrap js -->
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -27,161 +31,167 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="jumbotron">
+		<div class="brand-container">
+			<img src="img/vsomLogo.jpg" alt="logo">
+		</div>
+	</div>
+
+	<nav class="navbar navbar-default">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <img src="img/vsomLogo.jpg" alt="logo">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand animated swing" href="index.html">Vacay State of Mind</a>
+	      <a class="navbar-brand animated pulse infinite" href="index.html">Vacay State of Mind</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
+	      <ul class="nav navbar-nav navbar-right">
 	      	<li><a href="home.html">Sign Up</a></li>
 	        <li><a href="eat.html">Eat <span class="sr-only">(current)</span></a></li>
-	        <li class="active"><a href="stay.html">Stay</a></li>
-	        <li class="dropdown">
+	        <li><a href="stay.html">Stay</a></li>
+	        <li class="dropdown active">
 	          <a href="#" class="dropdown-toggle wander" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wander <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
 	            <li><a href="taiwan.html">Taiwan</a></li>
-	            <li><a href="japan.html">Japan</a></li>
-	            <li><a href="macau.html">Macau</a></li>
-	            <li><a href="caramoan.html">Caramoan</a></li>
-	            <li><a href="oslob.html">Oslob</a></li>
-	            <li><a href="dumaguete.html">Dumaguete</a></li>
-	            <li><a href="cavinti.html">Caliraya - Cavinti</a></li>
 	            <li role="separator" class="divider"></li>
-	            <li><a href="destinations.html">Future Destinations</a></li>
+	            <li><a href="japan.html">Japan</a></li>
 	          </ul> <!-- Wander dropdown -->
 	        </li> <!-- Dropdown Active -->
 	      </ul> <!-- Navbar-nav -->
-
-	      <form class="navbar-form navbar-left">
-	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Search">
-	        </div> <!-- search form -->
-	        <button type="submit" class="btn btn-default">Submit</button>
-	      </form> <!-- Navbar-left -->
-
-	      <ul class="nav navbar-nav navbar-right">
-            <li><a class="socmed" href="https://www.facebook.com"><img src="img/fb.jpg" alt="Facebook"></a></li>
-            <li><a class="socmed" href="https://www.instagram.com"><img src="img/ig.jpg" alt="Instagram"></a></li>
-	      </ul>
-	       <!--  </li>
-	      </ul> -->
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
 
-	<div class="container accommodation">
+	<div class="container">
 		<div class="row stay">
 			<div class="col-lg-6 col-md-8 col-sm-8 col-xs-12 clear">
-				<h3 class="stay">Where to Stay</h3>
-				<p class="stay">Hotels will always be there for you when you need them. But here at VSOM, we are fans of Airbnb. In using Airbnb, we like staying with Superhosts. Superhosts are people who have opened up their homes for travellers and have a good track record of consistently providing clean, safe, and truly accommodating homes wherever you go in the world. In case a host still has not reached Superhost stature, because frankly that's quite a feat, VSOM still makes sure the home being offered has a lot of good honest reviews. Below you will find our favorite Airbnb properties here and abroad so that you get an idea how meticulous we choose where to sleep and relax, even for our own vacays.</p>
+				<h1>Where to Stay</h1>
+				<p>Hotels will always be there for you when you need them. But here at VSOM, we are fans of Airbnb. In using Airbnb, we like staying with Superhosts. Superhosts are people who have opened up their homes for travellers and have a good track record of consistently providing clean, safe, and truly accommodating homes wherever you go in the world. In case a host still has not reached Superhost stature, because frankly that's quite a feat, VSOM still makes sure the home being offered has a lot of good honest reviews. Below you will find our favorite Airbnb properties here and abroad so that you get an idea how meticulous we choose where to sleep and relax, even for our own vacays.</p>
 			</div> <!-- /.col text -->
 			<div class="col-lg-6 col-md-4 col-sm-4 col-xs-12 clear">
 				<figure class="airbnb clear">
 					<img src="img/airbnb.jpg" alt="airbnblogo">
-					<figcaption>According to <a href="https://www.entrepreneur.com/article/235709">Entrepreneur</a> online, <q>The symbol itself is a combination of four simple symbols: a head to represent people, a location icon to represent place, a heart for love and then an A for Airbnb.</q></figcaption>
+					<figcaption>According to <a href="https://www.entrepreneur.com/article/235709"><strong>Entrepreneur</strong></a> online, <q>The symbol itself is a combination of four simple symbols: a head to represent people, a location icon to represent place, a heart for love and then an A for Airbnb.</q></figcaption>
 				</figure>
-			</div> <!-- /.col airbnb logo -->
-		</div> <!-- /.row -->
+			</div>
+		</div>
 
-		<div class="row taiwan">
-		  	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		<div class="row">
+		  	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			    <div class="thumbnail">
 			      <img src="img/taichung.jpg" alt="taichung">
 			      <div class="caption">
-			        <h3>Taichung, Taiwan - Girly Chic</h3>
+			        <h4>Taichung, Taiwan - Girly Chic</h4>
 			        <p><strong>Pros:</strong> Free In-House Wifi, Private Entrance (No Curfew), Host speaks English, Host can cook breakfast for a small fee</p>
 			        <p><strong>Cons:</strong> No elevator in the building, Flight of stairs strictly for fit individuals</p>
 			        <p><a target="_blank" href="https://www.airbnb.com/rooms/4836178" class="btn btn-info" role="button">Learn More</a></p>
-			      </div> <!-- /.caption taichung -->
-			    </div> <!-- /.thumbnail taichung -->
-		  	</div> <!-- /.col pics -->
+			      </div>
+			    </div>
+		  	</div>
 
- 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			    <div class="thumbnail">
 			      <img src="img/nantou.jpg" alt="taichung" height="200">
 			      <div class="caption">
-			       	<h3>Nantou, Taiwan - Rustic and Cozy</h3>
+			       	<h4>Nantou, Taiwan - Rustic and Cozy</h4>
 			        <p><strong>Pros:</strong> Breathtaking mountain view, Floor-to-ceiling glass windows, Efficient Heating System for Bathroom and Bed Mattress during Winter, Daily Simple Breakfast Included, Host has a car, Old-world wooden bathtub</p>
 			        <p><strong>Cons:</strong> No Wifi (VSOM will Rent Your Own Pocket Router/SIM for the whole trip), Host does NOT speak English but she can use Line app and SayHi app to communicate with you, Open Toilet</p>
-			        <p><a target="_blank" href="https://www.airbnb.com/rooms/7521897" class="btn btn-info" role="button">Learn More</a></p>
-			      </div> <!-- /.caption nantou -->
-			    </div> <!-- /.thumbnail nantou -->
-		  	</div> <!-- /.col pics -->
+			        <a target="_blank" href="https://www.airbnb.com/rooms/7521897" class="btn btn-info" role="button">Learn More</a>
+			      </div>
+			    </div>
+		  	</div>
 
-		  	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		  	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			    <div class="thumbnail">
 			      <img src="img/beitou.jpg" alt="beitou">
 			      <div class="caption">
-			       	<h3>Taipei, Taiwan - Hot Spring Area</h3>
+			       	<h4>Taipei, Taiwan - Hot Spring Area</h4>
 			        <p><strong>Pros:</strong> Free Wifi, Near the Taipei Xinbeitou MRT station, Located in the vicinity of the Beitou Hotspring attraction and Geothermal Valley, Host speaks English quite well, Lots of nearby restaurants, With washer in the balcony</p>
 			        <p><strong>Cons:</strong> Cannot think of any frankly, but maybe not for people who do not like small spaces</p>
-			        <p><a target="_blank" href="https://www.airbnb.com/rooms/10624708" class="btn btn-info" role="button">Learn More</a></p>
-			      </div> <!-- /.caption beitou -->
-			    </div> <!-- /.thumbnail beitou -->
-		  	</div> <!-- /.col pics -->
-		</div> <!-- /.row taiwan -->
+			        <a target="_blank" href="https://www.airbnb.com/rooms/10624708" class="btn btn-info" role="button">Learn More</a>
+			      </div>
+			    </div>
+		  	</div>
+		
 
-		<div class="row japan">
-		  	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		
+		  	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			    <div class="thumbnail">
 			      <img src="img/osaka.jpg" alt="osaka">
 			      <div class="caption">
-			        <h3>Osaka, Japan - Ferris Wheel View</h3>
+			        <h4>Osaka, Japan - Ferris Wheel View</h4>
 			        <p><strong>Pros:</strong> Free Pocket Wifi, No Curfew, Host speaks a bit of English, Near Kaiyukan (world's largest aquarium), Tempozan Ferris Wheel lights up at night right outside your window and balcony, Elevator in the building</p>
 			        <p><strong>Cons:</strong> None for us, biased as it may be, this is our favorite of them all. The bed is good for 2 lean-bodied people, although it may be uncomfortable for most. Host can provide extra futons, as requested</p>
-			        <p><a target="_blank" href="https://www.airbnb.com/rooms/9104297" class="btn btn-info" role="button">Learn More</a></p>
-			      </div> <!-- /.caption osaka -->
-			    </div> <!-- /.thumbnail osaka -->
-		  	</div> <!-- /.col pics -->
+			        <a target="_blank" href="https://www.airbnb.com/rooms/9104297" class="btn btn-info" role="button">Learn More</a>
+			      </div>
+			    </div>
+		  	</div>
 
- 			<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+				<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			    <div class="thumbnail">
 			      <img src="img/usj.jpg" alt="usj" height="200">
 			      <div class="caption">
-			       	<h3>Osaka, Japan - Short MRT ride away to Universal Studios</h3>
+			       	<h4>Osaka, Japan - Short MRT ride away to Universal Studios</h4>
 			        <p><strong>Pros:</strong> Very convenient to go to USJ, Free In-house Wifi, Ramen Shop next door, Efficient heating in-room during winter</p>
 			        <p><strong>Cons:</strong> No elevator in the building, Flight of stairs strictly for fit individuals, Separate Toilet and Shower Areas</p>
-			        <p><a target="_blank" href="https://www.airbnb.com/rooms/16495215" class="btn btn-info" role="button">Learn More</a></p>
-			      </div> <!-- /.caption usj -->
-			    </div> <!-- /.thumbnail usj -->
-		  	</div> <!-- /.col pics -->
+			        <a target="_blank" href="https://www.airbnb.com/rooms/16495215" class="btn btn-info" role="button">Learn More</a>
+			      </div>
+			    </div>
+		  	</div>
 
-		  	<div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+		  	<div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
 			    <div class="thumbnail">
 			      <img src="img/tokyo.jpg" alt="tokyo">
 			      <div class="caption">
-			       	<h3>Tokyo, Japan - Conveniently Near</h3>
+			       	<h4>Tokyo, Japan - Conveniently Near</h4>
 			        <p><strong>Pros:</strong> Free In-house Wifi, Near the Mizue Subway Station on the Shinjuku Line of Tokyo Metro, Lots of nearby restaurants, With Washer In-room</p>
 			        <p><strong>Cons:</strong> Space is pretty small but then again, that is normal by Tokyo standard</p>
-			        <p><a target="_blank" href="https://www.airbnb.com/rooms/20951886" class="btn btn-info" role="button">Learn More</a></p>
-			      </div> <!-- /.caption beitou -->
-			    </div> <!-- /.thumbnail beitou -->
-		  	</div> <!-- /.col pics -->
-		</div> <!-- /.row japan -->
+			        <a target="_blank" href="https://www.airbnb.com/rooms/20951886" class="btn btn-info" role="button">Learn More</a>
+			      </div>
+			    </div>
+		  	</div>
+		</div>
+		
 
 	</div> <!-- container for stay -->
 
 
 	<div class="container-fluid">
 		<footer class="row clear">
-			<div class="col-lg-12">
-				<p class="text-center">Copyright &copy; 2017 by Ruby Ann Y. Matias</p>
-			</div>
 
-			<p>Check out the new logo that I created on <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a> https://logomakr.com/8aTJ3E </p>
+			<ul id="socmed">
+				<li><a href="https://www.facebook.com"><img src="img/fb.jpg"></a></li>
+				<li><a href="https://www.twitter.com"><img src="img/twit.jpg"></a></li>
+				<li><a href="https://www.instagram.com"><img src="img/ig.jpg"></a></li>
+			</ul>
+			
+			<p class="text-center">Copyright &copy; 2017 by Ruby Ann Y. Matias</p>
+
+			<p>VSOM logo made with 
+				<a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a>
+				<!-- <span>https://logomakr.com/8aTJ3E</span> -->
+			</p>
 		</footer>
 	</div> <!-- /.container fluid -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script src="sakura/jquery-sakura.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(window).load(function () {
+			$('body').sakura();
+		});
+
+	</script>
 
 </body>
 </html>

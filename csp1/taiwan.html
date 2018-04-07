@@ -7,16 +7,20 @@
 
 	<title>Vacay State of Mind</title>
 
+	<link href="https://fonts.googleapis.com/css?family=Mystery+Quest|Paprika" rel="stylesheet">
+
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<link href="sakura/jquery-sakura.css" rel="stylesheet" type="text/css">
 	
 	<!-- import bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
 	<!-- import jquery -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="lib/jquery-3.2.1.min.js"></script>
 
 	<!-- import bootstrap js -->
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -27,311 +31,150 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<img src="img/vsomLogo.jpg" alt="logo">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand animated swing" href="index.html">Vacay State of Mind</a>
-			</div>
+	<div class="jumbotron">
+		<div class="brand-container">
+			<img src="img/vsomLogo.jpg" alt="logo">
+		</div>
+	</div>
 
-			<!-- Collect the nav links, forms, and other content for toggling -->
-			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-				<ul class="nav navbar-nav">
-					<li><a href="home.html">Sign Up</a></li>
-					<li><a href="eat.html">Eat <span class="sr-only">(current)</span></a></li>
-					<li><a href="stay.html">Stay</a></li>
-					<li class="dropdown active">
-						<a href="#" class="dropdown-toggle wander" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wander <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="taiwan.html">Taiwan</a></li>
-				            <li><a href="japan.html">Japan</a></li>
-				            <li><a href="macau.html">Macau</a></li>
-				            <li><a href="caramoan.html">Caramoan</a></li>
-				            <li><a href="oslob.html">Oslob</a></li>
-				            <li><a href="dumaguete.html">Dumaguete</a></li>
-				            <li><a href="cavinti.html">Caliraya - Cavinti</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="destinations.html">Future Destinations</a></li>
-						</ul> <!-- Wander dropdown -->
-					</li> <!-- Dropdown Active -->
-				</ul> <!-- Navbar-nav -->
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand animated pulse infinite" href="index.html">Vacay State of Mind</a>
+	    </div>
 
-				<form class="navbar-form navbar-left">
-					<div class="form-group">
-						<input type="text" class="form-control" placeholder="Search">
-					</div> <!-- search form -->
-					<button type="submit" class="btn btn-default">Submit</button>
-				</form> <!-- Navbar-left -->
-
-				<ul class="nav navbar-nav navbar-right">
-					<li><a class="socmed" href="https://www.facebook.com"><img src="img/fb.jpg" alt="Facebook"></a></li>
-					<li><a class="socmed" href="https://www.instagram.com"><img src="img/ig.jpg" alt="Instagram"></a></li>
-				</ul>
-		   </div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="home.html">Sign Up</a></li>
+	        <li><a href="eat.html">Eat <span class="sr-only">(current)</span></a></li>
+	        <li><a href="stay.html">Stay</a></li>
+	        <li class="dropdown active">
+	          <a href="#" class="dropdown-toggle wander" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wander <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="taiwan.html">Taiwan</a></li>
+	            <li role="separator" class="divider"></li>
+	            <li><a href="japan.html">Japan</a></li>
+	          </ul> <!-- Wander dropdown -->
+	        </li> <!-- Dropdown Active -->
+	      </ul> <!-- Navbar-nav -->
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
 	</nav>
 
-	<section>
-	  <div class="container gal-container">
-	    <div class="col-lg-8 col-md-8 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#1">
-	          <img src="img/tw/explore-thermalvalley.jpg">
-	        </a>
-	        <div class="modal fade" id="1" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/explore-thermalvalley.jpg">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Be in awe of nature at Beitou Thermal Valley</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->
-	    <div class="col-lg-4 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#2">
-	          <img src="img/tw/explore-beitou1.jpg">
-	        </a>
-	        <div class="modal fade" id="2" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content">
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/explore-beitou1.jpg">
-	              </div>
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Ride wooden hot tub-inspired trains.</h4>
-	                </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="col-lg-4 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#3">
-	          <img src="img/tw/explore-beitou2.jpg">
-	        </a>
-	        <div class="modal fade" id="3" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content">
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/explore-beitou2.jpg">
-	              </div>
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Indulge in one of the hot spring spa hotels.</h4>
-	                </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="col-lg-4 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#4">
-	          <img src="img/tw/explore-chiangkaishek.jpg">
-	        </a>
-	        <div class="modal fade" id="4" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content">
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/explore-chiangkaishek.jpg">
-	              </div>
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Wait for the perfect photo op moment in Chiang Kai-shek Memorial Hall.</h4>
-	                </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="col-lg-4 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#5">
-	          <img src="img/tw/explore-chiangkaishek2.jpg">
-	        </a>
-	        <div class="modal fade" id="5" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content">
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/explore-chiangkaishek2.jpg">
-	              </div>
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Pretty even on a gloomy day</h4>
-	                </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="col-lg-4 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#6">
-	          <img src="img/tw/explore-chiangkaishek3.jpg">
-	        </a>
-	        <div class="modal fade" id="6" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content">
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/explore-chiangkaishek3.jpg">
-	              </div>
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Marvel at the symmetry of the structure.</h4>
-	                </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="col-lg-4 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#7">
-	          <img src="img/tw/explore-chiangkaishek4.jpg">
-	        </a>
-	        <div class="modal fade" id="7" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content">
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/explore-chiangkaishek4.jpg">
-	              </div>
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Marvel at the symmetry of the structure.</h4>
-	                </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="col-lg-4 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#8">
-	          <img src="img/tw/explore-sheep.jpg">
-	        </a>
-	        <div class="modal fade" id="8" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content">
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/explore-sheep.jpg">
-	              </div>
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Feed free-roaming sheep in Cingjing Farm.</h4>
-	                </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="col-lg-4 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#9">
-	          <img src="img/tw/explore-cingjing.jpg">
-	        </a>
-	        <div class="modal fade" id="9" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content">
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/explore-cingjing.jpg">
-	              </div>
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Follow the flock around.</h4>
-	                </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="col-lg-8 col-md-8 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#10">
-	          <img src="img/tw/explore-cingjing1.jpg">
-	        </a>
-	        <div class="modal fade" id="10" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content">
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/explore-cingjing1.jpg">
-	              </div>
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Take in the view.</h4>
-	                </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="col-lg-8 col-md-8 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#11">
-	          <img src="img/tw/explore-cingjing2.jpg">
-	        </a>
-	        <div class="modal fade" id="11" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content">
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/explore-cingjing2.jpg">
-	              </div>
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Drink milk tea.</h4>
-	                </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	    <div class="col-lg-4 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#12">
-	          <img src="img/tw/explore-cingjing3.jpg">
-	        </a>
-	        <div class="modal fade" id="12" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content">
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/explore-cingjing3.jpg">
-	              </div>
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Or Whiskey, with a side of Jager.</h4>
-	                </div>
-	            </div>
-	          </div>
-	        </div>
-	      </div>
-	    </div>
-	  </div> <!-- gal-container  -->
-	</section>
+	<main class="tw-container">
+		<h1 id="taiwan">You're #allThatTaiwan! 🙈</h1>		
 
+		<div class="media">
+			<div class="media-left media-middle">
+				<img src="img/tw/explore-beitou1.jpg" alt="metro">
+			</div>
+			<div class="media-body">
+				<p>Taiwan used to be the most underrated destination in Asia. When you ask people where they want to go in this part of the world, you would hear, say, Thailand or Japan most often. But ever since the ROC-Taiwan launched a visa-free initiative for Filipinos last November, this small but terrific country took on social media by storm with witty travel hashtags to boot. It's only a 9-month trial period to last until end of July 2018 but we're hoping it sticks for good.</p>
+			</div>
+		</div>		
+
+		<div class="media">
+			<div class="media-body">
+				<p>We went to Taiwan in the late autumn of 2016 (first week of December). Even though it was not a popular country to visit back then, it held a special place in my heart already. My grandpa came from the mainland but when I was young, Taiwan is what I remember to be the place he went to and fro, and as a kid, I was always excited for his return. Well, he had been gone for many years now but I still feel like wandering around his second home is a way to connect to him, just in spirit, you know?</p>
+			</div>
+			<div class="media-right media-middle">
+				<img src="img/vsom1.jpg" alt="autumn">
+			</div>
+		</div>
+
+		<div class="media">
+			<div class="media-left media-middle">
+				<img src="img/tw/explore-thermalvalley.jpg" alt="beitou">
+			</div>
+			<div class="media-body">
+					<p>We chose stay in the Beitou area of Taipei because it is famous for its hot spring waters. In the morning, we'd soak up the nature, climbing uphill and stopping at the various facilities on the road. It's possible to take a car up but walking under the shade of trees felt much more zen. </p>
+			</div>
+		</div>
+
+		<div class="media">
+			<div class="media-body">
+				<p>Afterward, we would take on the rest of the city hassle-free thru the Taipei Metro, one of the most efficient train systems in Asia, if not the world. We spent our afternoons hunting down the best xiao long bao and milk tea, hopping from resto to resto. Then, we tried to get some culture amidst our gluttony and spent time in places like the Chiang Kai Shek Memorial Hall. The symmetry of the structures were awe-inspiring. At night, we went to night markets for glorious food. Our favorite is Shilin Night Market, where you could spend hours just shopping and eating. I'm drooling just thinking about the Torched Angus Beef with Cumin Pepper. Yum.</p>
+				<p class="animated pulse infinite"><a href="eat.html"><strong>Click here to see pictures of food, food, and more food.</strong></a></p>
+			</div>
+			<div class="media-right media-middle">
+				<img src="img/tw/explore-chiangkaishek.jpg" alt="chiangkaishek">
+			</div>
+		</div>
+
+		<div class="media">
+			<div class="media-left media-middle">
+				<img src="img/tw/explore-cingjing1.jpg" alt="cingjing">
+			</div>
+			<div class="media-body">
+				<p>On the next day, we decided to go into the heart of the country. We took the train to Taichung where we stayed at this lovely Airbnb with kind hosts who provided us detailed instructions on how to go up the mountain area. There's a spot called Fengchia night market worth checking out before you leave this city. The Salted Sweet Potato Fries are bomb AF. From Taichung, you only need to take 1 bus to go up Cingjing.</p>
+				<p class="animated pulse infinite"><a href="stay.html"><strong>Check out the places we stayed at.</strong></a></p>
+			</div>
+		</div>
+
+		<div class="media">
+			<div class="media-body">
+				<p>Upon entering Cingjing Farm, we almost went kid-crazy chasing down the free-roaming sheep to feed them with grass pellets. All you will see in this farm are blues, greens and these beige fluffies. You can feed them with your hand, you see. I would say this was the highlight of our trip and we'll come back for more. On the next blog post, you will read about Sun Moon Lake and Alishan Tea.</p>
+			</div>
+			<div class="media-right media-middle">
+				<img src="img/tw/explore-sheep.jpg" alt="sheep">
+			</div>
+		</div>
+		
+	</main>
+	  
 	<div class="container-fluid">
 		<footer class="row clear">
-			<div class="col-lg-12">
-				<p class="text-center">Copyright &copy; 2017 by Ruby Ann Y. Matias</p>
-			</div>
 
-			<p>Check out the new logo that I created on <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a> https://logomakr.com/8aTJ3E </p>
+			<ul id="socmed">
+				<li><a href="https://www.facebook.com"><img src="img/fb.jpg"></a></li>
+				<li><a href="https://www.twitter.com"><img src="img/twit.jpg"></a></li>
+				<li><a href="https://www.instagram.com"><img src="img/ig.jpg"></a></li>
+			</ul>
+			
+			<p class="text-center">Copyright &copy; 2017 by Ruby Ann Y. Matias</p>
+
+			<p>VSOM logo made with 
+				<a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a>
+				<!-- <span>https://logomakr.com/8aTJ3E</span> -->
+			</p>
 		</footer>
 	</div> <!-- /.container fluid -->
-	
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script src="sakura/jquery-sakura.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(window).load(function () {
+			$('body').sakura();
+		});
+
+		$(document).ready(function() {
+			var w = $(document).width();
+			var mm = $('.media-middle');
+			var mbod = $('.media-body');
+
+			if (w < 767) {
+				mm.removeClass("media-right");
+				mm.removeClass("media-left");
+				mm.removeClass("media-middle");
+				mbod.removeClass("media-body");
+
+				mm.addClass("col-sm-12 col-xs-12");
+				mbod.addClass("col-sm-12 col-xs-12");
+			}
+		})
+
+	</script>
+
 </body>
 </html>

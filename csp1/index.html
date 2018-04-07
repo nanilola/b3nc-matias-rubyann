@@ -7,16 +7,20 @@
 
 	<title>Vacay State of Mind</title>
 
+	<link href="https://fonts.googleapis.com/css?family=Mystery+Quest|Paprika" rel="stylesheet">
+
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<link href="sakura/jquery-sakura.css" rel="stylesheet" type="text/css">
 	
 	<!-- import bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
 	<!-- import jquery -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="lib/jquery-3.2.1.min.js"></script>
 
 	<!-- import bootstrap js -->
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -27,23 +31,28 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="jumbotron">
+		<div class="brand-container">
+			<img src="img/vsomLogo.jpg" alt="logo">
+		</div>
+	</div>
+
+	<nav class="navbar navbar-default">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <img src="img/vsomLogo.jpg" alt="logo">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand animated swing infinite" href="index.html">Vacay State of Mind</a>
+	      <a class="navbar-brand animated pulse infinite" href="index.html">Vacay State of Mind</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
+	      <ul class="nav navbar-nav navbar-right">
 	      	<li><a href="home.html">Sign Up</a></li>
 	        <li><a href="eat.html">Eat <span class="sr-only">(current)</span></a></li>
 	        <li><a href="stay.html">Stay</a></li>
@@ -51,487 +60,545 @@
 	          <a href="#" class="dropdown-toggle wander" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wander <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
 	            <li><a href="taiwan.html">Taiwan</a></li>
-	            <li><a href="japan.html">Japan</a></li>
-	            <li><a href="macau.html">Macau</a></li>
-	            <li><a href="caramoan.html">Caramoan</a></li>
-	            <li><a href="oslob.html">Oslob</a></li>
-	            <li><a href="dumaguete.html">Dumaguete</a></li>
-	            <li><a href="cavinti.html">Caliraya - Cavinti</a></li>
 	            <li role="separator" class="divider"></li>
-	            <li><a href="destinations.html">Future Destinations</a></li>
+	            <li><a href="japan.html">Japan</a></li>
 	          </ul> <!-- Wander dropdown -->
 	        </li> <!-- Dropdown Active -->
 	      </ul> <!-- Navbar-nav -->
-
-	      <form class="navbar-form navbar-left">
-	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Search">
-	        </div> <!-- search form -->
-	        <button type="submit" class="btn btn-default">Submit</button>
-	      </form> <!-- Navbar-left -->
-
-	      <ul class="nav navbar-nav navbar-right">
-            <li><a class="socmed" href="https://www.facebook.com"><img src="img/fb.jpg" alt="Facebook"></a></li>
-            <li><a class="socmed" href="https://www.instagram.com"><img src="img/ig.jpg" alt="Instagram"></a></li>
-	      </ul>
-	       <!--  </li>
-	      </ul> -->
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
 
-	<!-- CAROUSEL -->
+	<div class="row clear">
 
-	<div class="container slides">
+		<div class="maintabs"> <!-- Start tabs -->
 
-	  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-		  <!-- Indicators -->
-		  <ol class="carousel-indicators">
-		    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
-		    <li data-target="#carousel-example-generic" data-slide-to="8"></li>
-		  </ol>
+		  <!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+			    <li role="presentation" class="active"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About VSOM</a></li>
+			    <li role="presentation"><a href="#proposal" aria-controls="proposal" role="tab" data-toggle="tab">Get FREE Proposal</a></li>
+			    <li role="presentation"><a href="#testimonial" aria-controls="testimonial" role="tab" data-toggle="tab">Testimonials</a></li>
+			    <li role="presentation"><a href="#contact" aria-controls="contact" role="tab" data-toggle="tab">Contact Us</a></li>
+			</ul>
 
-		  <!-- Wrapper for slides -->
-		  <div class="carousel-inner" role="listbox">
+		  <!-- Tab panes -->
+			<div class="tab-content">
+			    <div role="tabpanel" class="tab-pane active" id="about">
+			    
+			    	<div id="advert" class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
+			    		<div class="upper-left"></div>
+					    <div class="upper-right"></div>
+					    <div class="lower-left"></div>
+					    <div class="lower-right"></div>
+				    </div>
 
-		    <div class="item active">
-		      <img class="img-responsive center-block" src="img/vsom1.jpg" alt="autumn">
-		      <div class="carousel-caption">
-		        Early Autumn in Nantou, Taiwan
-		      </div>
-		    </div> <!-- item 1 -->
+			    	<div id="aboutUs" class="well col-lg-5 col-md-5 col-sm-12 col-xs-12">
+				    	<p>Vacay State of Mind or VSOM is a service created for like-minded travellers who wish they can ask someone else to create their travel plans AS IF they made it themselves.</p>
 
-		    <div class="item">
-		      <img class="img-responsive center-block" src="img/vsom2.jpg" alt="dusk">
-		      <div class="carousel-caption">
-		        Dusk Up High On the Mountains
-		      </div>
-		    </div> <!-- item 2 -->
+				    	<p>As human beings, we are creatures of comfort. But everyone has a different idea of what works and what doesn't, so why should you settle for standard travel packages in which the same itinerary is offered to all?</p>
 
-		    <div class="item active">
-		      <img class="img-responsive center-block" src="img/vsom3.jpg" alt="xmas">
-		      <div class="carousel-caption">
-		        Taipei Christmas Lights
-		      </div>
-		    </div> <!-- item 3 -->
+				    	<p>Let VSOM create that balanced travel plan that answers to as many of your needs within your budget (or non-budget? 😉).</p>
 
-		    <div class="item active">
-		      <img class="img-responsive center-block" src="img/vsom4.jpg" alt="hogwarts">
-		      <div class="carousel-caption">
-		        Hogwarts from Below
-		      </div>
-		    </div> <!-- item 5 -->
+				    	<p>On this site, you will also find blog posts related to our two absolute favorite destinations. So, get inspired.</p>
+			    	</div>
+			    </div>
 
-		    <div class="item">
-		      <img class="img-responsive center-block" src="img/vsom5.jpg" alt="people">
-		      <div class="carousel-caption">
-		        Hustle and Bustle
-		      </div>
-		    </div> <!-- item 6 -->
+			    <div role="tabpanel" class="tab-pane" id="proposal">
 
-		    <div class="item active">
-		      <img class="img-responsive center-block" src="img/vsom6.jpg" alt="temple">
-		      <div class="carousel-caption">
-		        Byodoin Temple in Uji, Kyoto, JP
-		      </div>
-		    </div> <!-- item 7 -->
-
-		    <div class="item">
-		      <img class="img-responsive center-block" src="img/vsom7.jpg" alt="bridge">
-		      <div class="carousel-caption">
-		        Tempozan Bridge, Osaka, JP
-		      </div> 
-		    </div> <!-- item 8 -->
-
-		    <div class="item active">
-		      <img class="img-responsive center-block" src="img/vsom8.jpg" alt="matcha">
-		      <div class="carousel-caption">
-		        Matcha Goods, Uji, Kyoto, JP
-		      </div>
-		    </div> <!-- item 9 -->
-
-		    <div class="item">
-		      <img class="img-responsive center-block" src="img/vsom9.jpg" alt="cats">
-		      <div class="carousel-caption">
-		        Ceramic Kitties, Kyoto, JP
-		      </div>
-		    </div> <!-- item 10 -->
-		    
-
-		  </div> <!-- wrapper for slides carousel-inner -->
-
-		  <!-- Controls -->
-		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-		    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-		    <span class="sr-only">Previous</span>
-		  </a>
-		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-		    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-		    <span class="sr-only">Next</span>
-		  </a>
-		</div>
-
-	</div> <!-- container for carousel -->
-
-<!-- END OF CAROUSEL -->
-
-	<div class="maintabs"> <!-- Start tabs -->
-
-	  <!-- Nav tabs -->
-		<ul class="nav nav-tabs" role="tablist">
-		    <li role="presentation" class="active"><a href="#about" aria-controls="about" role="tab" data-toggle="tab">About VSOM</a></li>
-		    <li role="presentation"><a href="#sample" aria-controls="sample" role="tab" data-toggle="tab">Sample Customized Itineraries</a></li>
-		    <li role="presentation"><a href="#proposal" aria-controls="proposal" role="tab" data-toggle="tab">Get YOUR Itinerary Proposal HERE!</a></li>
-		    <li role="presentation"><a href="#testimonial" aria-controls="testimonial" role="tab" data-toggle="tab">Testimonials</a></li>
-		</ul>
-
-	  <!-- Tab panes -->
-		<div class="tab-content">
-		    <div role="tabpanel" class="tab-pane active" id="about">
-		    	<div class="well">
-			    	<img class="logo clear" src="img/vsomLogo.jpg">
-			    	<ul class="screening">
-			    		<li>Have you ever wanted to travel but cannot find the time to research about destinations, create itineraries, book flights, accommodations, and nearby day trips?</li>
-			    		<li>Have you ever tried looking at other travel/tour agencies and find the standard packages not quite to your liking?</li>
-			    		<li>Have you taken one look at at their offered itineraries and found them too jam-packed for one day's worth of your energy?</li>
-			    		<li>Have you felt even the slightest doubt as to the cleanliness or safety of the accommodation or tours they might book for you?</li>
-			    	</ul>
-			    	<p>If you answered yes to any or all of these questions, well then, <span class="vsom">VSOM is for you</span>.</p>
-			    	<p>Vacay State of Mind or VSOM is a service created for like-minded travellers who wish they can ask someone else to create their travel plans AS IF they made it themselves. As human beings, we are creatures of comfort. But everyone has a different idea of what works and what doesn't, so why should you settle for standard travel packages in which the same itinerary is offered to all? Let VSOM create that balanced travel plan that answers to as many of your needs within your budget (or non-budget? *wink wink*).</p>
-		    	</div>
-		    </div>
-
-		    <div role="tabpanel" class="tab-pane" id="sample">...</div>
-
-		    <div role="tabpanel" class="tab-pane" id="proposal">
-
-		    	<div class="well">
-		    		<h3>Tell VSOM what you need for this specific travel.</h3>
-		    		<form action="" method="">
-		    			<div class="form-group">
-							<label for="contactName"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Name</label>
-							<input type="text" class="form-control" name="contactName" id="contactName" placeholder="Enter your name">
-						</div> <!-- form name -->
-
-						<div class="form-group">
-							<label for="contactEmail"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</label>
-							<input type="email" class="form-control" name="contactEmail" id="contactEmail" placeholder="Enter your email">
-						</div> <!-- form email -->
-
-						<div class="form-group">
-							<label for="contactMobile"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Mobile</label>
-							<input type="number" class="form-control" name="contactMobile" id="contactMobile" placeholder="Enter your mobile number">
-						</div> <!-- form mobile -->
-
-						<div class="form-group">
-							<label for="contactLandline"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Landline</label>
-							<input type="number" class="form-control" name="contactLandline" id="contactLandline" placeholder="Enter your landline number">
-						</div> <!-- form landline -->
-
-						<div class="form-group">
-							<label for="departureDate"><span class="glyphicon glyphicon-calender" aria-hidden="true"></span> Preferred Departure Date</label>
-							<input type="date" class="form-control" name="departureDate" id="departureDate">
-						</div> <!-- form departure -->
-
-						<div class="form-group">
-							<label for="returnDate"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Preferred Return Date</label>
-							<input type="date" class="form-control" name="returnDate" id="returnDate">
-						</div> <!-- form return -->
-
-						<div class="form-group">
-							<label for="flexibility">Are your travel dates flexible?</label>
-							<div class="radio">
-			  					<label><input type="radio" name="optradio" value="yes" id="flexibility">Yes, I am willing to adjust the dates.</label>
+			    	<div class="well">
+			    		<h4>Tell VSOM what you need.</h4>
+			    		<div class="form-horizontal">
+			    			<div class="form-group">
+								<label class="col-sm-4 control-label" for="contactName"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> Name</label>
+								<div class="col-sm-4">
+									<input type="text" class="form-control" name="contactName" id="contactName" placeholder="Enter your name">
+								</div>
 							</div>
-							<div class="radio">
-			  					<label><input type="radio" name="optradio" value="no" id="flexibility">No, I must travel on these dates.</label>
-							</div>
-						</div> <!-- form flexibility -->
 
-						<div class="form-group">
-							<label for="destination"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Where do you want to go?</label>
-							<input type="text" class="form-control" name="destination" id="destination" placeholder="e.g. city, country">
-						</div> <!-- form destination -->
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="contactEmail"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Email</label>
+								<div class="col-sm-4">
+									<input type="email" class="form-control" name="contactEmail" id="contactEmail" placeholder="Enter your email">
+								</div>
+							</div>
 
-						<div class="form-group">
-							<label for="adults">How many adults (including you) are travelling?</label>
-							<input type="number" class="form-control" name="adults" id="adults" placeholder="Enter number of adult guests">
-						</div> <!-- form adult -->
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="contactMobile"><span class="glyphicon glyphicon-earphone" aria-hidden="true"></span> Mobile</label>
+								<div class="col-sm-4">
+									<input type="number" class="form-control" name="contactMobile" id="contactMobile" placeholder="Enter your mobile number">
+								</div>
+							</div>
 
-						<div class="form-group">
-							<label for="children">How many children are travelling with you?</label>
-							<input type="number" class="form-control" name="children" id="children" placeholder="Enter number of children guests">
-						</div> <!-- form children -->
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="contactLandline"><span class="glyphicon glyphicon-phone-alt" aria-hidden="true"></span> Landline</label>
+								<div class="col-sm-4">
+									<input type="number" class="form-control" name="contactLandline" id="contactLandline" placeholder="Enter your landline number">
+								</div>
+							</div>
 
-						<div class="form-group">
-							<label for="age">Kindly specify the age of the children coming with you.</label>
-							<input type="text" class="form-control" name="age" id="age" placeholder="e.g. 1 five-year old">
-						</div> <!-- form age -->				
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="returnDate"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Preferred Departure Date</label>
+								<div class="col-sm-4">
+									<input type="date" class="form-control" name="departureDate" id="departureDate">
+								</div>
+							</div>
 
-						<div class="form-group">
-							<label for="airlineService">
-								<span class="glyphicon glyphicon-plane" aria-hidden="true"></span> Airline Service Preference
-							</label>
-							<div class="radio">
-			  					<label><input type="radio" name="optradio" value="economy" id="airlineService">Economy Class</label>
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="returnDate"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Preferred Return Date</label>
+								<div class="col-sm-4">
+									<input type="date" class="form-control" name="returnDate" id="returnDate">
+								</div>
 							</div>
-							<div class="radio">
-			  					<label><input type="radio" name="optradio" value="business" id="airlineService">Business Class</label>
-							</div>
-							<label for="airlineChoice">
-								<span class="glyphicon glyphicon-plane" aria-hidden="true"></span> Airline of Choice
-							</label>
-							<select class="form-control" id="airlineChoice">
-								<option value="pal">Philippine Airlines</option>
-								<option value="cebpac">Cebu Pacific Air</option>
-								<option value="airasia">Air Asia</option>
-								<option value="skyjet">Skyjet</option>
-								<option value="airjuan">Air Juan</option>
-								<option value="ana">All Nippon Airways (ANA)</option>
-								<option value="asiana">Asiana Airlines</option>
-								<option value="cathay">Cathay Pacific Airways</option>
-								<option value="delta">Delta Air Lines</option>
-								<option value="emirates">Emirates</option>
-								<option value="eva">EVA Air</option>
-								<option value="etihad">Etihad Airways</option>
-								<option value="jetstar">Jetstar Airways</option>
-								<option value="klm">KLM Royal Dutch Airlines</option>
-								<option value="qantas">Qantas Airways</option>
-								<option value="qatar">Qatar Airways</option>
-								<option value="sgair">Singapore Airlines</option>
-								<option value="etihad">Thai Airways</option>
-								<option value="turkish">Turkish Airlines</option>
-							</select>
-						</div> <!-- form airlines -->
 
-						<div class="form-group">
-							<label for="accommodation"><span class="glyphicon glyphicon-home" aria-hidden="true">
-							</span> Accommodation Preferences</label>
-							<span class="glyphicon glyphicon-ok" aria-hidden="true">Check as many options that applies.</span>
-							<div class="checkbox">
-								<label><input type="checkbox" value="hotel" id="accommodation">Hotel</label>
-							</div>
-							<div class="checkbox">
-							 	<label><input type="checkbox" value="bnb" id="accommodation">Bed and Breakfast</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="airbnbapt" id="accommodation">Airbnb Entire Apartment</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="airbnbpvt" id="accommodation">Airbnb Private Room with Host</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="hostel" id="accommodation">Hostel or Dorm</label>
-							</div>
-						</div> <!-- form accommodation pref -->
+							<hr>
 
-						<div class="form-group">
-							<label for="amenities"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Requested Amenities</label>
-							<span class="glyphicon glyphicon-ok" aria-hidden="true">Check the items you absolutely cannot live without, given your choice of destination.</span>
-							<div class="checkbox">
-								<label><input type="checkbox" value="wifi" id="amenities">Wireless Internet</label>
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="flexibility">Are your travel dates flexible?</label>
+								<div class="col-sm-4">
+									<div class="radio">
+					  					<label><input type="radio" name="optradio" value="yes" id="flexibility">Yes, I am willing to adjust the dates.</label>
+									</div>
+									<div class="radio">
+					  					<label><input type="radio" name="optradio" value="no" id="flexibility">No, I must travel on these dates.</label>
+									</div>
+								</div>
 							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="tv" id="amenities">TV</label>
+
+							<hr>
+
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="destination"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span> Where do you want to go?</label>
+								<div class="col-sm-4">
+									<input type="text" class="form-control" name="destination" id="destination" placeholder="e.g. city, country">
+								</div>
 							</div>
-							<div class="checkbox">
-							 	<label><input type="checkbox" value="elevator" id="amenities">Elevator</label>
+
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="adults">How many adults (including you) are travelling?</label>
+								<div class="col-sm-4">
+									<input type="number" class="form-control" name="adults" id="adults" placeholder="Enter number of adult guests">
+								</div>
 							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="aircon" id="amenities">Airconditioning</label>
+
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="children">How many children are travelling with you?</label>
+								<div class="col-sm-4">
+									<input type="number" class="form-control" name="children" id="children" placeholder="Enter number of children guests">
+								</div>
+							</div> 
+
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="age">Kindly specify the age of the children coming with you.</label>
+								<div class="col-sm-4">
+									<input type="text" class="form-control" name="age" id="age" placeholder="e.g. 1 five-year old">
+								</div>
 							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="kitchen" id="amenities">Kitchen</label>
+
+							<hr>			
+
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="airlineService">
+									<span class="glyphicon glyphicon-plane" aria-hidden="true"></span> Airline Service Preference
+								</label>
+								<div class="col-sm-4">
+									<div class="radio">
+					  					<label><input type="radio" name="optradio" value="economy" id="airlineService">Economy Class</label>
+									</div>
+									<div class="radio">
+					  					<label><input type="radio" name="optradio" value="business" id="airlineService">Business Class</label>
+									</div>
+								</div>
 							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="pool" id="amenities">Pool</label>
+
+								<hr>
+
+							<div class="form-group">
+								<label class="control-label col-sm-4" for="airlineChoice">
+									<span class="glyphicon glyphicon-plane" aria-hidden="true"></span> Airline of Choice
+								</label>
+								<div class="col-sm-4">
+									<select class="form-control" id="airlineChoice">
+										<option value="pal">Philippine Airlines</option>
+										<option value="cebpac">Cebu Pacific Air</option>
+										<option value="airasia">Air Asia</option>
+										<option value="skyjet">Skyjet</option>
+										<option value="airjuan">Air Juan</option>
+										<option value="ana">All Nippon Airways (ANA)</option>
+										<option value="asiana">Asiana Airlines</option>
+										<option value="cathay">Cathay Pacific Airways</option>
+										<option value="delta">Delta Air Lines</option>
+										<option value="emirates">Emirates</option>
+										<option value="eva">EVA Air</option>
+										<option value="etihad">Etihad Airways</option>
+										<option value="jetstar">Jetstar Airways</option>
+										<option value="klm">KLM Royal Dutch Airlines</option>
+										<option value="qantas">Qantas Airways</option>
+										<option value="qatar">Qatar Airways</option>
+										<option value="sgair">Singapore Airlines</option>
+										<option value="etihad">Thai Airways</option>
+										<option value="turkish">Turkish Airlines</option>
+									</select>
+								</div>
 							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="gym" id="amenities">Gym</label>
+
+							<hr>
+
+							<div class="form-group">
+								<div class="col-sm-12">
+									<label for="accommodation"><span class="glyphicon glyphicon-home" aria-hidden="true">
+									</span> Accommodation Preferences</label>
+									<h5>
+									<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Check as many options that apply.</h5>
+								</div>
+
+								<div class="accommodation col-sm-12">
+									<div id="checkHotel" class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+										<label><input type="checkbox" value="hotel" id="accommodation">Hotel</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									 	<label><input type="checkbox" value="bnb" id="accommodation">Bed and Breakfast</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="airbnbapt" id="accommodation">Airbnb Entire Apartment</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="airbnbpvt" id="accommodation">Airbnb Private Room with Host</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="hostel" id="accommodation">Hostel or Dorm</label>
+									</div>
+								</div>
+							</div> <!-- form accommodation pref -->
+
+							<hr>
+
+							<div class="form-group">
+								<div class="col-sm-12">
+									<label for="amenities"><span class="glyphicon glyphicon-star" aria-hidden="true"></span> Requested Amenities</label>
+									<h5>
+									<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Check the items you absolutely cannot live without, given your choice of destination.
+									</h5>
+								</div>
+
+								<div class="amenities col-sm-12">
+									<div id="checkWifi" class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+										<label><input type="checkbox" value="wifi" id="amenities">Wireless Internet</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="tv" id="amenities">TV</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									 	<label><input type="checkbox" value="elevator" id="amenities">Elevator</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="aircon" id="amenities">Airconditioning</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="kitchen" id="amenities">Kitchen</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="pool" id="amenities">Pool</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="gym" id="amenities">Gym</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="dryer" id="amenities">Hair Dryer</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="hotshower" id="amenities">Hot Shower</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="bathtub" id="amenities">Bath Tub</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="iron" id="amenities">Clothes Iron</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="hangers" id="amenities">Hangers</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="shampoo" id="amenities">Shampoo</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="washerdryer" id="amenities">Washer / Dryer</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="pet" id="amenities">Pet Friendly</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="smoking" id="amenities">Smoking Allowed</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="ethernet" id="amenities">Ethernet Connection</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="parking" id="amenities">Free Parking</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="breakfast" id="amenities">Breakfast Included</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="crib" id="amenities">Baby Crib</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="highchair" id="amenities">High Chair</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+									  	<label><input type="checkbox" value="game" id="amenities">Game Console</label>
+									</div>
+								</div>
+
+							</div> <!-- form amenities -->
+
+							<hr>
+							
+							<div class="form-group">
+								<div class="col-sm-12">
+									<label for="attraction"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Attraction Interests</label>
+									<h5>
+									<span class="glyphicon glyphicon-ok" aria-hidden="true"></span> Check the kinds of places you are interested to go to.</h5>
+								</div>
+
+								<div class="attraction col-sm-12">
+									<div id="checkNature" class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+										<label><input type="checkbox" value="park" id="attraction">Nature Parks</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+										<label><input type="checkbox" value="hike" id="attraction">Hiking Trails</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+										<label><input type="checkbox" value="amusement" id="attraction">Amusement Park</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+										<label><input type="checkbox" value="culinary" id="attraction">Culinary Delights</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+										<label><input type="checkbox" value="bazaar" id="attraction">Bargain Bazaar</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+										<label><input type="checkbox" value="shopping" id="attraction">Upscale Shopping</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+										<label><input type="checkbox" value="extreme" id="attraction">Extreme Sports</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+										<label><input type="checkbox" value="cafe" id="attraction">Cafe and Patisserie</label>
+									</div>
+									<div class="checkbox col-lg-4 col-md-4 col-sm-4 col-xs-6">
+										<label><input type="checkbox" value="food" id="attraction">Night Food Market</label>
+									</div>
+								</div>
+							</div> <!-- form attraction -->
+
+							<hr>
+
+							<div class="policy">
+								<p>Before you click on that Submit button, please read our <a href="privacy.html">Privacy Policy</a> .Thank you.</p>
 							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="dryer" id="amenities">Hair Dryer</label>
+
+							<div class="form-group submit-row">
+								<button id="btnProp" class="btn btn-success btn-lg">Submit</button>
 							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="hotshower" id="amenities">Hot Shower</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="bathtub" id="amenities">Bath Tub</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="iron" id="amenities">Clothes Iron</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="hangers" id="amenities">Hangers</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="shampoo" id="amenities">Shampoo</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="washerdryer" id="amenities">Washer / Dryer</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="pet" id="amenities">Pet Friendly</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="smoking" id="amenities">Smoking Allowed</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="ethernet" id="amenities">Ethernet Connection</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="parking" id="amenities">Free Parking</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="breakfast" id="amenities">Breakfast Included</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="crib" id="amenities">Baby Crib</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="highchair" id="amenities">High Chair</label>
-							</div>
-							<div class="checkbox">
-							  	<label><input type="checkbox" value="game" id="amenities">Game Console</label>
-							</div>
-						</div> <!-- form amenities -->
 						
-						<div class="form-group">
-							<label for="attraction"><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span> Attraction Interests</label>
-							<span class="glyphicon glyphicon-ok" aria-hidden="true">Check the kinds of places you are interested to go to.</span>
-							<div class="checkbox">
-								<label><input type="checkbox" value="park" id="attraction">Nature Parks</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" value="hike" id="attraction">Hiking Trails</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" value="amusement" id="attraction">Amusement Park</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" value="culinary" id="attraction">Culinary Delights</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" value="bazaar" id="attraction">Bargain Bazaar</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" value="shopping" id="attraction">Upscale Shopping</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" value="extreme" id="attraction">Extreme Sports</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" value="cafe" id="attraction">Cafe and Patisserie</label>
-							</div>
-							<div class="checkbox">
-								<label><input type="checkbox" value="food" id="attraction">Night Food Market</label>
-							</div>
-						</div> <!-- form attraction -->
+			    		</div>
 
-						<button type="submit" class="btn btn-primary">Submit</button>
-					
-		    		</form>
+			    		<div id="alertProp" class="alert alert-info alert-dismissible">
+				    		<button type="button" class="close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
 
-		    	</div> <!-- /.proposal well -->
-		    </div> <!-- /.panel proposal -->
+				    		<strong>Travel preferences sent! We'll get back to you within 24 hours.</strong>
+			    		</div>
 
-		    <div role="tabpanel" class="tab-pane" id="testimonial">
-		    	
-		    	<div class="well">
-		    		<h3>What Our Loyal Clients Say</h3>
-					<div class="media">
-						<div class="media-left">
-							<img src="http://lorempixel.com/70/70" alt="">
-						</div> <!-- comment 1 media-left -->
-						<div class="media-body">
-							<h4><a href="#">Chrissy Teigen</a></h4>
-							<p><a href="#">4 December 2017 7:20 PM</a></p>
-							<q>Saved me a lot of time doing this on my own and I still got most of what I needed during the trip. It's a win-win situation! Will definitely book again</q>
-							<p>
-								<button class="btn btn-success">
-									<span class="glyphicon glyphicon-thumbs-up"></span> Like
-								</button>
-								<button class="btn btn-primary">
-									<span class="glyphicon glyphicon-comment"></span> Reply
-								</button>
-								<button class="btn btn-danger">
-									<span class="glyphicon glyphicon-thumbs-down"></span> Report as spam
-								</button>
-							</p>
-						</div> <!-- comment 1 media-body -->
-					</div> <!-- comment 1 media -->
-				</div> <!-- comment 1 well -->
+			    	</div> <!-- /.proposal well -->
+			    </div> <!-- /.panel proposal -->
 
-				<!-- Comment 2 -->
-				<div class="well">
-					<div class="media">
-						<div class="media-left">
-							<img src="http://lorempixel.com/70/70" alt="">
-						</div> <!-- comment 2 media-left -->
-						<div class="media-body">
-							<h4><a href="#">Jim Fallon</a></h4>
-							<p><a href="#">27 October 2017 9:14 AM</a></p>
-							<q>Surprised my wife with a spontaneous trip. Stress-free for both of us! But I scored all the plus-points.</q>
-							<p>
-								<button class="btn btn-success">
-									<span class="glyphicon glyphicon-thumbs-up"></span> Like
-								</button>
-								<button class="btn btn-primary">
-									<span class="glyphicon glyphicon-comment"></span> Reply
-								</button>
-								<button class="btn btn-danger">
-									<span class="glyphicon glyphicon-thumbs-down"></span> Report as spam
-								</button>
-							</p>
-						</div> <!-- comment 2 media-body -->
-					</div> <!-- comment 2 media -->
-				</div> <!-- comment 2 well -->
+			    <div role="tabpanel" class="tab-pane" id="testimonial">
+			    	
+			    	<div class="well">
+			    		<h4>What Our Loyal Clients Say</h4>
+			    	
+						<div class="media">
+							<div class="media-left">
+								<img src="img/female.jpg" alt="profile" width="50" height="50">
+							</div>
+							<div class="media-body">
+								<h4>Chrissy T.</h4>
+								<small>4 December 2017 7:20 PM</small>
+								<q>Saved me a lot of time doing this on my own and I still got most of what I needed during the trip. It's a win-win situation! Will definitely book again</q>
+								<p>
+									<button class="btn btn-success btn-xs">
+										<span class="glyphicon glyphicon-thumbs-up"></span> Like
+									</button>
+									<button class="btn btn-primary btn-xs">
+										<span class="glyphicon glyphicon-comment"></span> Reply
+									</button>
+									<button class="btn btn-danger btn-xs">
+										<span class="glyphicon glyphicon-thumbs-down"></span> Report as spam
+									</button>
+								</p>
+							</div>
+						</div> 
+			
+						<div class="media">
+							<div class="media-left">
+								<img src="img/male.jpg" alt="profile" width="50" height="50">
+							</div>
+							<div class="media-body">
+								<h4>Jim F.</h4>
+								<p><small>27 October 2017 9:14 AM</small></p>
+								<q>Surprised my wife with a spontaneous trip. Stress-free for both of us! But I scored all the plus-points.</q>
+								<p>
+									<button class="btn btn-success btn-xs">
+										<span class="glyphicon glyphicon-thumbs-up"></span> Like
+									</button>
+									<button class="btn btn-primary btn-xs">
+										<span class="glyphicon glyphicon-comment"></span> Reply
+									</button>
+									<button class="btn btn-danger btn-xs">
+										<span class="glyphicon glyphicon-thumbs-down"></span> Report as spam
+									</button>
+								</p>
+							</div>
+						</div>
 
-				<!-- Comment 3 -->
-				<div class="well">
-					<div class="media">
-						<div class="media-left">
-							<img src="http://lorempixel.com/70/70" alt="">
-						</div> <!-- comment 3 media-left -->
-						<div class="media-body">
-							<h4><a href="#">Kim Kardashian</a></h4>
-							<p><a href="#">16 April 2017 1:32 PM</a></p>
-							<q>It's so hard to discreetly book a trip for myself with paparazzi watching me like a hawk! Thanks to VSOM, I got the downtime I sooo deserve.</q>
-							<p>
-								<button class="btn btn-success">
-									<span class="glyphicon glyphicon-thumbs-up"></span> Like
-								</button>
-								<button class="btn btn-primary">
-									<span class="glyphicon glyphicon-comment"></span> Reply
-								</button>
-								<button class="btn btn-danger">
-									<span class="glyphicon glyphicon-thumbs-down"></span> Report as spam
-								</button>
-							</p>
-						</div> <!-- comment 3 media-body -->
-					</div> <!-- comment 3 media -->
-				</div> <!-- /.testimonial well -->
-		    </div> <!-- /.panel testimonial -->
-		</div> <!-- .tabcontent -->
+						<div class="media">
+							<div class="media-left">
+								<img src="img/female.jpg" alt="profile" width="50" height="50">
+							</div>
+							<div class="media-body">
+								<h4>Kim K.</h4>
+								<p><small>16 April 2017 1:32 PM</small></p>
+								<q>It's so hard to discreetly book a trip for myself with paparazzi watching me like a hawk! Thanks to VSOM, I got the downtime I sooo deserve.</q>
+								<p>
+									<button class="btn btn-success btn-xs">
+										<span class="glyphicon glyphicon-thumbs-up"></span> Like
+									</button>
+									<button class="btn btn-primary btn-xs">
+										<span class="glyphicon glyphicon-comment"></span> Reply
+									</button>
+									<button class="btn btn-danger btn-xs">
+										<span class="glyphicon glyphicon-thumbs-down"></span> Report as spam
+									</button>
+								</p>
+							</div>
+						</div>
+					</div> <!-- /.testimonial well -->
+			    </div> <!-- /.panel testimonial -->
 
-	</div> <!-- / End main tabs -->
+			    <div role="tabpanel" class="tab-pane" id="contact">
+
+					<div class="well">
+						<div class="form-horizontal">
+							<h3 id="inquire">Inquire Now</h3>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">Name: </label>
+								<div class="col-sm-4">
+									<input type="text" name="name" placeholder="your name" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">Email: </label>
+								<div class="col-sm-4">
+									<input type="email" name="email" placeholder="your email" class="form-control">
+								</div>
+							</div>
+							<div class="form-group">
+								<label class="col-sm-4 control-label">Message: </label>
+								<div class="col-sm-4">
+									<textarea rows="5" name="message" placeholder="your message" class="form-control"></textarea>
+								</div>
+							</div>
+
+							<div class="policy">
+								<p>Before you click on that Send button, please read our <a href="privacy.html">Privacy Policy</a> .Thank you.</p>
+							</div>
+
+							<div class="form-group submit-row">
+								<button id="btnInquire" class="btn btn-success btn-lg">Send</button>
+							</div>
+						</div>
+
+						<div id="alertMsg" class="alert alert-info alert-dismissible">
+				    		<button type="button" class="close">
+							  <span aria-hidden="true">&times;</span>
+							</button>
+
+				    		<strong>Message sent! We'll get back to you within 24 hours.</strong>
+			    		</div>
+					</div>
+
+			    </div>
+			</div> <!-- .tabcontent -->
+
+		</div> <!-- / End main tabs -->
+
+	</div>
 
 	<div class="container-fluid">
 		<footer class="row clear">
-			<div class="col-lg-12">
-				<p class="text-center">Copyright &copy; 2017 by Ruby Ann Y. Matias</p>
-			</div>
 
-			<p>Check out the new logo that I created on <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a> https://logomakr.com/8aTJ3E </p>
+			<ul id="socmed">
+				<li><a href="https://www.facebook.com"><img src="img/fb.jpg"></a></li>
+				<li><a href="https://www.twitter.com"><img src="img/twit.jpg"></a></li>
+				<li><a href="https://www.instagram.com"><img src="img/ig.jpg"></a></li>
+			</ul>
+			
+			<p class="text-center">Copyright &copy; 2017 by Ruby Ann Y. Matias</p>
+
+			<p>VSOM logo made with 
+				<a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a>
+				<!-- <span>https://logomakr.com/8aTJ3E</span> -->
+			</p>
 		</footer>
 	</div> <!-- /.container fluid -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script src="sakura/jquery-sakura.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(window).load(function() {
+			$('.alert').hide();
+
+			$('#btnInquire').on("click", function() {
+				$('#alertMsg').show();				
+			});
+
+			$('#btnProp').on("click", function() {
+				$('#alertProp').show();
+			});
+
+			$('.close').on("click", function() {
+				$('.alert').hide();
+			});
+		});
+
+		$(document).ready(function() {
+			
+			var adv= $('#advert');
+			var bg = ["url('img/vsom3.jpg')", "url('img/vsom6.jpg')", "url('img/vsom9.jpg')", "url('img/vsom2.jpg')"];
+
+			// console.log(bg);
+
+			var current = 0;
+
+			function nextBg() {
+				adv.css('background-image', bg[current = ++current % bg.length]);
+
+				setTimeout(nextBg, 5000);
+			}
+
+			setTimeout(nextBg, 5000);
+		});
+
+		$(window).load(function () {
+			$('body').sakura();
+		});
+
+	</script>
 
 </body>
 </html>

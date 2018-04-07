@@ -7,16 +7,20 @@
 
 	<title>Vacay State of Mind</title>
 
+	<link href="https://fonts.googleapis.com/css?family=Mystery+Quest|Paprika" rel="stylesheet">
+
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<link href="sakura/jquery-sakura.css" rel="stylesheet" type="text/css">
 	
 	<!-- import bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
 	<!-- import jquery -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="lib/jquery-3.2.1.min.js"></script>
 
 	<!-- import bootstrap js -->
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -27,638 +31,364 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="jumbotron">
+		<div class="brand-container">
+			<img src="img/vsomLogo.jpg" alt="logo">
+		</div>
+	</div>
+
+	<nav class="navbar navbar-default">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <img src="img/vsomLogo.jpg" alt="logo">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand animated swing" href="index.html">Vacay State of Mind</a>
+	      <a class="navbar-brand animated pulse infinite" href="index.html">Vacay State of Mind</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
+	      <ul class="nav navbar-nav navbar-right">
 	      	<li><a href="home.html">Sign Up</a></li>
-	        <li class="active"><a href="eat.html">Eat <span class="sr-only">(current)</span></a></li>
+	        <li><a href="eat.html">Eat <span class="sr-only">(current)</span></a></li>
 	        <li><a href="stay.html">Stay</a></li>
-	        <li class="dropdown">
+	        <li class="dropdown active">
 	          <a href="#" class="dropdown-toggle wander" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wander <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
 	            <li><a href="taiwan.html">Taiwan</a></li>
-	            <li><a href="japan.html">Japan</a></li>
-	            <li><a href="macau.html">Macau</a></li>
-	            <li><a href="caramoan.html">Caramoan</a></li>
-	            <li><a href="oslob.html">Oslob</a></li>
-	            <li><a href="dumaguete.html">Dumaguete</a></li>
-	            <li><a href="cavinti.html">Caliraya - Cavinti</a></li>
 	            <li role="separator" class="divider"></li>
-	            <li><a href="destinations.html">Future Destinations</a></li>
+	            <li><a href="japan.html">Japan</a></li>
 	          </ul> <!-- Wander dropdown -->
 	        </li> <!-- Dropdown Active -->
 	      </ul> <!-- Navbar-nav -->
-
-	      <form class="navbar-form navbar-left">
-	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Search">
-	        </div> <!-- search form -->
-	        <button type="submit" class="btn btn-default">Submit</button>
-	      </form> <!-- Navbar-left -->
-
-	      <ul class="nav navbar-nav navbar-right">
-            <li><a class="socmed" href="https://www.facebook.com"><img src="img/fb.jpg" alt="Facebook"></a></li>
-            <li><a class="socmed" href="https://www.instagram.com"><img src="img/ig.jpg" alt="Instagram"></a></li>
-	      </ul>
-	       <!--  </li>
-	      </ul> -->
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
 
 	<div class="container gal-container">
-	    <div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#1">
-	          <img src="img/tw/food-cake.jpg" alt="cake">
-	        </a>
-	        <div class="modal fade" id="1" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-cake.jpg" alt="cake">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Cake Cafe in Taichung, Taiwan</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->
+		<h1>Eat</h1>
+		<p><span class="glyphicon glyphicon-zoom-in"></span> Click on a picture to zoom in.</p>
 
-		<div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#2">
-	          <img src="img/tw/food-candiedfruits.jpg" alt="candy">
-	        </a>
-	        <div class="modal fade" id="2" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-candiedfruits.jpg" alt="candy">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Candied Tomatoes and Berries, Shilin Night Market, Taipei</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->					
+		<div class="row big-thumb">
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-cake.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" alt="cake">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-candiedfruits.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" alt="candy">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-cuttlefish.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" alt="chicken">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-friedcuttlefish.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" alt="cuttlefish">	
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-friedcuttlefish2.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" alt="wasabi">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-oysteromelette.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" alt="omelette">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-peniswaffle.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow" alt="waffle">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-raohe.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow" alt="raohe">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-shilin.jpg" onclick="openModal();currentSlide(9)" class="hover-shadow" alt="shilin">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-sushi.jpg" onclick="openModal();currentSlide(10)" class="hover-shadow" alt="sushi">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-sweetpotato.jpg" onclick="openModal();currentSlide(11)" class="hover-shadow" alt="fries">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-torchedbeef.jpg" onclick="openModal();currentSlide(12)" class="hover-shadow" alt="beef">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-traintra.jpg" onclick="openModal();currentSlide(13)" class="hover-shadow" alt="tra">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-twsb.jpg" onclick="openModal();currentSlide(14)" class="hover-shadow" alt="twsb">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/tw/food-xiaolongbao.jpg" onclick="openModal();currentSlide(15)" class="hover-shadow" alt="xlb">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/jp/food-cheesetart.jpg" onclick="openModal();currentSlide(16)" class="hover-shadow" alt="cheesetart">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/jp/food-takoyaki.jpg" onclick="openModal();currentSlide(17)" class="hover-shadow" alt="takoyaki">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/jp/food-kani.jpg" onclick="openModal();currentSlide(18)" class="hover-shadow" alt="kani">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/jp/food-matcha.jpg" onclick="openModal();currentSlide(19)" class="hover-shadow" alt="matcha">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/jp/food-biwako.jpg" onclick="openModal();currentSlide(20)" class="hover-shadow" alt="biwako">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/jp/food-chocolate.jpg" onclick="openModal();currentSlide(21)" class="hover-shadow" alt="choco">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/jp/food-haradaramen.jpg" onclick="openModal();currentSlide(22)" class="hover-shadow" alt="ramen">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/jp/food-haradaramen1.jpg" onclick="openModal();currentSlide(23)" class="hover-shadow" alt="ramen">
+			</div>
+			<div class="col-lg-3 col-md-3 col-sm-4 col-xs-6">
+				<img src="img/jp/food-osaka3.jpg" onclick="openModal();currentSlide(24)" class="hover-shadow" alt="stew">
+			</div>
+		</div>
 
-		<div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#3">
-	          <img src="img/tw/food-cuttlefish.jpg" alt="chicken">
-	        </a>
-	        <div class="modal fade" id="3" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-cuttlefish.jpg" alt="chicken">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Braised Chicken and Cuttlefish, Beitou, Taipei</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->									
+		<div id="foodModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				
+			<div class="food-slides">
+				<div class="number-text">1 / 24</div>
+				<img src="img/tw/food-cake.jpg" alt="cake">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">2 / 24</div>
+				<img src="img/tw/food-candiedfruits.jpg" alt="candy">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">3 / 24</div>
+				<img src="img/tw/food-cuttlefish.jpg" alt="chicken">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">4 / 24</div>
+				<img src="img/tw/food-friedcuttlefish.jpg" alt="cuttlefish">	
+			</div>
+			<div class="food-slides">
+				<div class="number-text">5 / 24</div>
+				<img src="img/tw/food-friedcuttlefish2.jpg" alt="wasabi">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">6 / 24</div>
+				<img src="img/tw/food-oysteromelette.jpg" alt="omelette">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">7 / 24</div>
+				<img src="img/tw/food-peniswaffle.jpg" alt="waffle">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">8 / 24</div>
+				<img src="img/tw/food-raohe.jpg" alt="raohe">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">9 / 24</div>
+				<img src="img/tw/food-shilin.jpg" alt="shilin">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">10 / 24</div>
+				<img src="img/tw/food-sushi.jpg" alt="sushi">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">11 / 24</div>
+				<img src="img/tw/food-sweetpotato.jpg" alt="fries">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">12 / 24</div>
+				<img src="img/tw/food-torchedbeef.jpg" alt="beef">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">13 / 24</div>
+				<img src="img/tw/food-traintra.jpg" alt="tra">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">14 / 24</div>
+				<img src="img/tw/food-twsb.jpg" alt="twsb">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">15 / 24</div>
+				<img src="img/tw/food-xiaolongbao.jpg" alt="xlb">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">16 / 24</div>
+				<img src="img/jp/food-cheesetart.jpg" alt="cheesetart">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">17 / 24</div>
+				<img src="img/jp/food-takoyaki.jpg" alt="takoyaki">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">18 / 24</div>
+				<img src="img/jp/food-kani.jpg" alt="kani">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">19 / 24</div>	
+				<img src="img/jp/food-matcha.jpg" alt="matcha">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">20 / 24</div>
+				<img src="img/jp/food-biwako.jpg" alt="biwako">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">21 / 24</div>
+				<img src="img/jp/food-chocolate.jpg" alt="choco">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">22 / 24</div>
+				<img src="img/jp/food-haradaramen.jpg" alt="ramen">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">23 / 24</div>
+				<img src="img/jp/food-haradaramen1.jpg" alt="ramen">
+			</div>
+			<div class="food-slides">
+				<div class="number-text">24 / 24</div>
+				<img src="img/jp/food-osaka3.jpg" alt="stew">
+			</div>
+			</div>
 
-		<div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#4">
-	          <img src="img/tw/food-friedcuttlefish.jpg" alt="cuttlefish">
-	        </a>
-	        <div class="modal fade" id="4" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-friedcuttlefish.jpg" alt="cuttlefish">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Deep-fried Cuttlefish, Fengchia Night Market, Taichung</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->							
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-	    <div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#5">
-	          <img src="img/tw/food-friedcuttlefish2.jpg" alt="wasabi">
-	        </a>
-	        <div class="modal fade" id="5" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-friedcuttlefish2.jpg" alt="wasabi">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Crispy Cuttlefish with Wasabi Mayo, Fengchia Night Market, Taichung</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->							
+			<div class="caption-container">
+				<p id="caption"></p>
+			</div>
 
-	    <div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#6">
-	          <img src="img/tw/food-oysteromelette.jpg" alt="omelette">
-	        </a>
-	        <div class="modal fade" id="6" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-oysteromelette.jpg" alt="omelette">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Oyster Omelette, Shilin Night Market, Taipei</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
 
-	    <div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#7">
-	          <img src="img/tw/food-oysters2.jpg" alt="oysters">
-	        </a>
-	        <div class="modal fade" id="7" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-oysters2.jpg" alt="oysters">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Fresh Oysters, Shilin Night Market, Taipei</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->
-
-	    <div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#8">
-	          <img src="img/tw/food-peniswaffle.jpg" alt="waffle">
-	        </a>
-	        <div class="modal fade" id="8" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-peniswaffle.jpg" alt="waffle">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Penis Waffle Cake, Shilin Night Market, Taipei</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-	    <div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#9">
-	          <img src="img/tw/food-porkcutlet.jpg" alt="porkcutlet">
-	        </a>
-	        <div class="modal fade" id="9" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-porkcutlet.jpg" alt="porkcutlet">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Pork Cutlet in Din Tai Fung, Taipei</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-		<div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#10">
-	          <img src="img/tw/food-raohe.jpg" alt="raohe">
-	        </a>
-	        <div class="modal fade" id="10" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-raohe.jpg" alt="raohe">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Raohe Night Market, Taipei</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-	    <div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#11">
-	          <img src="img/tw/food-shilin.jpg" alt="shilin">
-	        </a>
-	        <div class="modal fade" id="11" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-shilin.jpg" alt="shilin">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Shilin Night Market, Taipei</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
+			<!-- THUMBNAIL IMAGE CONTROLS -->
+			<div class="thumbs">
 			
-	    <div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#12">
-	          <img src="img/tw/food-sushi.jpg" alt="sushi">
-	        </a>
-	        <div class="modal fade" id="12" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-sushi.jpg" alt="sushi">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Sushi Express</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
+				<img src="img/tw/food-cake.jpg" class="demo" onclick="currentSlide(1)" alt="Assortment of Cakes">
+			
+				<img src="img/tw/food-candiedfruits.jpg" class="demo" onclick="currentSlide(2)" alt="Candied Cherry Tomatoes and Strawberries">
+			
+				<img src="img/tw/food-cuttlefish.jpg" class="demo" onclick="currentSlide(3)" alt="Braised Chicken and Cuttlefish">
+			
+				<img src="img/tw/food-friedcuttlefish.jpg" class="demo" onclick="currentSlide(4)" alt="Deep-fried Cuttlefish">	
+			
+				<img src="img/tw/food-friedcuttlefish2.jpg" class="demo" onclick="currentSlide(5)" alt="Wasabi Mayo">
+			
+				<img src="img/tw/food-oysteromelette.jpg" class="demo" onclick="currentSlide(6)" alt="Oyster Omelette">
+			
+				<img src="img/tw/food-peniswaffle.jpg" class="demo" onclick="currentSlide(7)" alt="NSFW Waffles">
+			
+				<img src="img/tw/food-raohe.jpg" class="demo" onclick="currentSlide(8)" alt="Raohe Night Market">
+			
+				<img src="img/tw/food-shilin.jpg" class="demo" onclick="currentSlide(9)" alt="Shilin Night Market">
+			
+				<img src="img/tw/food-sushi.jpg" class="demo" onclick="currentSlide(10)" alt="Sushi and Maki">
+			
+				<img src="img/tw/food-sweetpotato.jpg" class="demo" onclick="currentSlide(11)" alt="Salted Sweet Potato Fries">
+			
+				<img src="img/tw/food-torchedbeef.jpg" class="demo" onclick="currentSlide(12)" alt="Torched Beef with Cumin">
+			
+				<img src="img/tw/food-traintra.jpg" class="demo" onclick="currentSlide(13)" alt="TRA Bento">
+			
+				<img src="img/tw/food-twsb.jpg" class="demo" onclick="currentSlide(14)" alt="Chocolate">
+			
+				<img src="img/tw/food-xiaolongbao.jpg" class="demo" onclick="currentSlide(15)" alt="Xiao Long Bao">
+			
+				<img src="img/jp/food-cheesetart.jpg" class="demo" onclick="currentSlide(16)" alt="Cheesetart">
+			
+				<img src="img/jp/food-takoyaki.jpg" class="demo" onclick="currentSlide(17)" alt="Piping Hot Takoyaki">
+			
+				<img src="img/jp/food-kani.jpg" class="demo" onclick="currentSlide(18)" alt="Kani Doraku">
+			
+				<img src="img/jp/food-matcha.jpg" class="demo" onclick="currentSlide(19)" alt="Matcha Takoyaki">
+			
+				<img src="img/jp/food-biwako.jpg" class="demo" onclick="currentSlide(20)" alt="Set Meals at Biwako Valley Ski Resort">
+			
+				<img src="img/jp/food-chocolate.jpg" class="demo" onclick="currentSlide(21)" alt="Chocolate Sandwiches">
+			
+				<img src="img/jp/food-haradaramen.jpg" class="demo" onclick="currentSlide(22)" alt="Harada Ramen">
+			
+				<img src="img/jp/food-haradaramen1.jpg" class="demo" onclick="currentSlide(23)" alt="Harada Ramen">
+			
+				<img src="img/jp/food-osaka3.jpg" class="demo" onclick="currentSlide(24)" alt="Seafood Stew">
+			</div>
 
-		<div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#13">
-	          <img src="img/tw/food-sweetpotato.jpg" alt="fries">
-	        </a>
-	        <div class="modal fade" id="13" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-sweetpotato.jpg" alt="fries">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Salty Sweet Potato Fries, Fengchia Night Market</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-		<div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#14">
-	          <img src="img/tw/food-torchedbeef.jpg" alt="beef">
-	        </a>
-	        <div class="modal fade" id="14" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-torchedbeef.jpg" alt="beef">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Torched Beef, Shilin Night Market, Taipei</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-		<div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#15">
-	          <img src="img/tw/food-traintra.jpg" alt="tra">
-	        </a>
-	        <div class="modal fade" id="15" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-traintra.jpg" alt="tra">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Taiwan Railways Administration Train Bento </h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-		<div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#16">
-	          <img src="img/tw/food-twsb.jpg" alt="twsb">
-	        </a>
-	        <div class="modal fade" id="16" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-twsb.jpg" alt="twsb">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Chocolate Coins, 7/11 x Starbucks, Taichung </h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-	    <div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#17">
-	          <img src="img/tw/food-xiaolongbao.jpg" alt="xlb">
-	        </a>
-	        <div class="modal fade" id="17" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/tw/food-xiaolongbao.jpg" alt="xlb">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Xiao Long Bao, Din Tai Fung, Taipei</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-	    <div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#18">
-	          <img src="img/jp/food-cheesetart.jpg" alt="cheesetart">
-	        </a>
-	        <div class="modal fade" id="18" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/jp/food-cheesetart.jpg" alt="cheesetart">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Pablo's Cheese Tart, Japan</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->	
-
-	    <div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#19">
-	          <img src="img/jp/food-pablo.jpg" alt="pablo">
-	        </a>
-	        <div class="modal fade" id="19" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/jp/food-pablo.jpg" alt="pablo">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Pablo in Dotonbori, Osaka</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->			
-		
-	    <div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#20">
-	          <img src="img/jp/food-takoyaki.jpg" alt="takoyaki">
-	        </a>
-	        <div class="modal fade" id="20" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/jp/food-takoyaki.jpg" alt="takoyaki">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Takoyaki in Japan's Culinary Capital, Osaka</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-		<div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#21">
-	          <img src="img/jp/food-kani.jpg" alt="kani">
-	        </a>
-	        <div class="modal fade" id="21" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/jp/food-kani.jpg" alt="kani">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Kani Doraku - iconic crab restaurant in Osaka</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-		<div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#22">
-	          <img src="img/jp/food-matcha.jpg" alt="matcha">
-	        </a>
-	        <div class="modal fade" id="22" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/jp/food-matcha.jpg" alt="matcha">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Matcha-flavored Takoyaki in matcha capital Uji, Kyoto</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-	    <div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#23">
-	          <img src="img/jp/food-biwako.jpg" alt="biwako">
-	        </a>
-	        <div class="modal fade" id="23" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/jp/food-biwako.jpg" alt="biwako">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Comforting Curry and Udon up in Biwako Ski Valley Resort</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-		<div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#24">
-	          <img src="img/jp/food-chocolate.jpg" alt="choco">
-	        </a>
-	        <div class="modal fade" id="24" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/jp/food-chocolate.jpg" alt="choco">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Chocolate Sandwiches in Osaka</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-		<div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#25">
-	          <img src="img/jp/food-haradaramen.jpg" alt="ramen">
-	        </a>
-	        <div class="modal fade" id="25" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/jp/food-haradaramen.jpg" alt="ramen">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Harada Ramen in Osaka, one short ride away from Universal Studios</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-		<div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#26">
-	          <img src="img/jp/food-haradaramen1.jpg" alt="ramen">
-	        </a>
-	        <div class="modal fade" id="26" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/jp/food-haradaramen1.jpg" alt="ramen">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Ramen: Shoyu-based (Left) and Miso-based (Right) </h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
-
-	    <div class="col-lg-3 col-md-4 col-sm-12 co-xs-12 gal-item">
-	      <div class="box">
-	        <a href="#" data-toggle="modal" data-target="#27">
-	          <img src="img/jp/food-osaka3.jpg" alt="stew">
-	        </a>
-	        <div class="modal fade" id="27" tabindex="-1" role="dialog">
-	          <div class="modal-dialog" role="document">
-	            <div class="modal-content"> 
-	                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-	              <div class="modal-body">
-	                <img src="img/jp/food-osaka3.jpg" alt="stew">
-	              </div> <!-- modal-body -->
-	                <div class="col-md-12 description">
-	                  <h4 class="text-center">Seafood Stew in Osaka</h4>
-	                </div> <!-- description -->
-	            </div> <!-- modal-content -->
-	          </div> <!-- modal-dialog -->
-	        </div> <!-- modal fade -->
-	      </div> <!-- box -->
-	    </div> <!-- col -->		
+		</div>						
 
 	</div> <!-- gal-container -->
 
 	<div class="container-fluid">
 		<footer class="row clear">
-			<div class="col-lg-12">
-				<p class="text-center">Copyright &copy; 2017 by Ruby Ann Y. Matias</p>
-			</div>
 
-			<p>Check out the new logo that I created on <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a> https://logomakr.com/8aTJ3E </p>
+			<ul id="socmed">
+				<li><a href="https://www.facebook.com"><img src="img/fb.jpg"></a></li>
+				<li><a href="https://www.twitter.com"><img src="img/twit.jpg"></a></li>
+				<li><a href="https://www.instagram.com"><img src="img/ig.jpg"></a></li>
+			</ul>
+			
+			<p class="text-center">Copyright &copy; 2017 by Ruby Ann Y. Matias</p>
+
+			<p>VSOM logo made with 
+				<a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a>
+				<!-- <span>https://logomakr.com/8aTJ3E</span> -->
+			</p>
 		</footer>
 	</div> <!-- /.container fluid -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script src="sakura/jquery-sakura.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(window).load(function () {
+			$('body').sakura();
+		});
+
+		function openModal() {
+			document.getElementById('foodModal').style.display = "block";
+		}
+
+		function closeModal() {
+			document.getElementById('foodModal').style.display = "none";
+		}
+
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+			showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+			showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+			var i;
+			var slides = document.getElementsByClassName("food-slides");
+			var dots = document.getElementsByClassName("demo");
+			var captionText = document.getElementById("caption");
+
+			if (n > slides.length) {
+				slideIndex = 1;
+			}
+
+			if (n < 1) {
+				slideIndex = slides.length;
+			}
+
+			for (i = 0; i < slides.length; i++) {
+				slides[i].style.display = "none";
+			}
+
+			for (i = 0; i < dots.length; i++) {
+				dots[i].className = dots[i].className.replace(" active", "");
+			}
+
+			slides[slideIndex-1].style.display = "block";
+			dots[slideIndex-1].className += " active";
+			captionText.innerHTML = dots[slideIndex-1].alt;
+		}
+
+	</script>
 
 </body>
 </html>

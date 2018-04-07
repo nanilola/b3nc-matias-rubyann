@@ -7,16 +7,20 @@
 
 	<title>Vacay State of Mind</title>
 
+	<link href="https://fonts.googleapis.com/css?family=Mystery+Quest|Paprika" rel="stylesheet">
+
 	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
 	<link rel="stylesheet" type="text/css" href="css/animate.css">
+
+	<link href="sakura/jquery-sakura.css" rel="stylesheet" type="text/css">
 	
 	<!-- import bootstrap css -->
 	<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
 
 	<!-- import jquery -->
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="lib/jquery-3.2.1.min.js"></script>
 
 	<!-- import bootstrap js -->
 	<script type="text/javascript" src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
@@ -25,136 +29,140 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 </head>
-<body>
+<body id="privacy">
 
-	<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="jumbotron">
+		<div class="brand-container">
+			<img src="img/vsomLogo.jpg" alt="logo">
+		</div>
+	</div>
+
+	<nav class="navbar navbar-default">
 	  <div class="container-fluid">
 	    <!-- Brand and toggle get grouped for better mobile display -->
 	    <div class="navbar-header">
-	      <img src="img/vsomLogo.jpg" alt="logo">
 	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 	        <span class="sr-only">Toggle navigation</span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand animated swing" href="index.html">Vacay State of Mind</a>
+	      <a class="navbar-brand animated pulse infinite" href="index.html">Vacay State of Mind</a>
 	    </div>
 
 	    <!-- Collect the nav links, forms, and other content for toggling -->
 	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	      	<li class="active"><a href="home.html">Sign Up</a></li>
+	      <ul class="nav navbar-nav navbar-right">
+	      	<li><a href="home.html">Sign Up</a></li>
 	        <li><a href="eat.html">Eat <span class="sr-only">(current)</span></a></li>
 	        <li><a href="stay.html">Stay</a></li>
-	        <li class="dropdown">
+	        <li class="dropdown active">
 	          <a href="#" class="dropdown-toggle wander" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wander <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
 	            <li><a href="taiwan.html">Taiwan</a></li>
-	            <li><a href="japan.html">Japan</a></li>
-	            <li><a href="macau.html">Macau</a></li>
-	            <li><a href="caramoan.html">Caramoan</a></li>
-	            <li><a href="oslob.html">Oslob</a></li>
-	            <li><a href="dumaguete.html">Dumaguete</a></li>
-	            <li><a href="cavinti.html">Caliraya - Cavinti</a></li>
 	            <li role="separator" class="divider"></li>
-	            <li><a href="destinations.html">Future Destinations</a></li>
+	            <li><a href="japan.html">Japan</a></li>
 	          </ul> <!-- Wander dropdown -->
 	        </li> <!-- Dropdown Active -->
 	      </ul> <!-- Navbar-nav -->
-
-	      <form class="navbar-form navbar-left">
-	        <div class="form-group">
-	          <input type="text" class="form-control" placeholder="Search">
-	        </div> <!-- search form -->
-	        <button type="submit" class="btn btn-default">Submit</button>
-	      </form> <!-- Navbar-left -->
-
-	      <ul class="nav navbar-nav navbar-right">
-            <li><a class="socmed" href="https://www.facebook.com"><img src="img/fb.jpg" alt="Facebook"></a></li>
-            <li><a class="socmed" href="https://www.instagram.com"><img src="img/ig.jpg" alt="Instagram"></a></li>
-	      </ul>
-	       <!--  </li>
-	      </ul> -->
 	    </div><!-- /.navbar-collapse -->
 	  </div><!-- /.container-fluid -->
 	</nav>
 
-	<div class="privacy">
-		<div class="policy">
-			<h1>VSOM - Privacy Policy</h1>
-			<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-			  <div class="panel panel-default">
-			    <div class="panel-heading" role="tab" id="headingOne">
-			      <h4 class="panel-title">
-			        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-			          <strong>How does VSOM use personal information?</strong>
-			        </a>
-			      </h4>
-			    </div> <!-- panel heading -->
-			    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-			      <div class="panel-body">
-			        <p>VSOM uses the personal information it collects from you to help it understand your needs and to help it provide you with a better service, and in particular for the following reasons:</p>
+	<div class="container">
+		<h1>VSOM - Privacy Policy</h1>
+		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingOne">
+		      <h4 class="panel-title">
+		        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+		          <strong>How does VSOM use personal information?</strong>
+		        </a>
+		      </h4>
+		    </div> <!-- panel heading -->
+		    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+		      <div class="panel-body">
+		        <p>VSOM uses the personal information it collects from you to help it understand your needs and to help it provide you with a better service, and in particular for the following reasons:</p>
 
-			        <ul>
-						<li>To assess what special flight offers and services we can offer you;</li>
-						<li>To process your request on purchasing our product(s) and service(s) and confirm your travel arrangements;</li>
-						<li>To improve our products and services;</li>
-						<li>For our own marketing purposes, such as sending you updates on our latest offers and promotions. When you provide personal information online, you may indicate that you do not want to receive direct marketing materials from VSOM or any other company.</li>
-						<li>We may contact you using these details to remind you to complete your booking and/or offer our assistance (in case, for instance, you were suffering from technical difficulties).</li>
-					</ul>
-			      </div> <!-- panel-body -->
-			    </div> <!-- collapseOne -->
-			  </div> <!-- panel-default -->
+		        <ul>
+					<li>To assess what special flight offers and services we can offer you;</li>
+					<li>To process your request on purchasing our product(s) and service(s) and confirm your travel arrangements;</li>
+					<li>To improve our products and services;</li>
+					<li>For our own marketing purposes, such as sending you updates on our latest offers and promotions. When you provide personal information online, you may indicate that you do not want to receive direct marketing materials from VSOM or any other company.</li>
+					<li>We may contact you using these details to remind you to complete your booking and/or offer our assistance (in case, for instance, you were suffering from technical difficulties).</li>
+				</ul>
+		      </div> <!-- panel-body -->
+		    </div> <!-- collapseOne -->
+		  </div> <!-- panel-default -->
 
-			  <div class="panel panel-default">
-			    <div class="panel-heading" role="tab" id="headingTwo">
-			      <h4 class="panel-title">
-			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-			          <strong>Does VSOM share my personal information with anyone else?</strong>
-			        </a>
-			      </h4>
-			    </div> <!-- panel heading -->
-			    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-			      <div class="panel-body">
-			        <p>VSOM may send personally identifiable information about you to other companies or people when:</p>
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingTwo">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+		          <strong>Does VSOM share my personal information with anyone else?</strong>
+		        </a>
+		      </h4>
+		    </div> <!-- panel heading -->
+		    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+		      <div class="panel-body">
+		        <p>VSOM may send personally identifiable information about you to other companies or people when:</p>
 
-					<ul>
-						<li>We have your consent to share the information with our affiliates and with selected marketing partners to enable them to send you promotional materials about products or services.</li>
-						<li>We need to share your information to provide the service, product or information you have requested, these companies do not have the right to use your personal information for any purpose other than to provide the service, product or information you have requested from VSOM; or</li>
-						<li>We are legally obliged to provide personal information and booking details to governmental authorities, including customs, Court, and immigration officials. We may share information in the aggregate to assess marketing and sales performance.</li>
-					</ul>
-			      </div> <!-- panel body -->
-			    </div> <!-- collapseTwo -->
-			  </div> <!-- panel-default -->
+				<ul>
+					<li>We have your consent to share the information with our affiliates and with selected marketing partners to enable them to send you promotional materials about products or services.</li>
+					<li>We need to share your information to provide the service, product or information you have requested, these companies do not have the right to use your personal information for any purpose other than to provide the service, product or information you have requested from VSOM; or</li>
+					<li>We are legally obliged to provide personal information and booking details to governmental authorities, including customs, Court, and immigration officials. We may share information in the aggregate to assess marketing and sales performance.</li>
+				</ul>
+		      </div> <!-- panel body -->
+		    </div> <!-- collapseTwo -->
+		  </div> <!-- panel-default -->
 
-			  <div class="panel panel-default">
-			    <div class="panel-heading" role="tab" id="headingThree">
-			      <h4 class="panel-title">
-			        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-			          <strong>Data Security</strong>
-			        </a>
-			      </h4>
-			    </div> <!-- panel heading -->
-			    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-			      <div class="panel-body">
-			      	<p>VSOM is committed to ensuring that your information is secure. In order to prevent unauthorised access to, or disclosure of, any of your personal information, VSOM has put in place suitable physical, electronic and managerial procedures to safeguard and secure the information it collects. In order to protect the security of your data, VSOM uses encryption technology when collecting or transferring sensitive personal data such as credit card information.</p>
-			      </div> <!-- panel body -->
-			    </div> <!-- collapseThree -->
-			  </div> <!-- panel-default -->
-			</div> <!-- panel Group -->
-		</div> <!-- policy -->
+		  <div class="panel panel-default">
+		    <div class="panel-heading" role="tab" id="headingThree">
+		      <h4 class="panel-title">
+		        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+		          <strong>Data Security</strong>
+		        </a>
+		      </h4>
+		    </div> <!-- panel heading -->
+		    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+		      <div class="panel-body">
+		      	<p>VSOM is committed to ensuring that your information is secure. In order to prevent unauthorised access to, or disclosure of, any of your personal information, VSOM has put in place suitable physical, electronic and managerial procedures to safeguard and secure the information it collects. In order to protect the security of your data, VSOM uses encryption technology when collecting or transferring sensitive personal data such as credit card information.</p>
+		      </div> <!-- panel body -->
+		    </div> <!-- collapseThree -->
+		  </div> <!-- panel-default -->
+		</div> <!-- panel Group -->
+		
 	</div> <!-- privacy -->
 	
 	<div class="container-fluid">
 		<footer class="row clear">
-			<div class="col-lg-12">
-				<p class="text-center">Copyright &copy; 2017 by Ruby Ann Y. Matias</p>
-			</div>
 
-			<p>Check out the new logo that I created on <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a> https://logomakr.com/8aTJ3E </p>
+			<ul id="socmed">
+				<li><a href="https://www.facebook.com"><img src="img/fb.jpg"></a></li>
+				<li><a href="https://www.twitter.com"><img src="img/twit.jpg"></a></li>
+				<li><a href="https://www.instagram.com"><img src="img/ig.jpg"></a></li>
+			</ul>
+			
+			<p class="text-center">Copyright &copy; 2017 by Ruby Ann Y. Matias</p>
+
+			<p>VSOM logo made with 
+				<a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a>
+				<!-- <span>https://logomakr.com/8aTJ3E</span> -->
+			</p>
 		</footer>
 	</div> <!-- /.container fluid -->
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+	<script src="sakura/jquery-sakura.min.js"></script>
+
+	<script type="text/javascript">
+
+		$(window).load(function () {
+			$('body').sakura();
+		});
+
+	</script>
 
 </body>
 </html>
