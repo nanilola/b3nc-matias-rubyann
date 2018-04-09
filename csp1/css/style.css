@@ -287,7 +287,7 @@ img[src*="airbnb"] {
 	width: 50%;
 }
 
-@media only screen and (max-width: 376px) {
+@media only screen and (max-width: 768px) {
 
 	.food-slides img {
 		width: 100%;
@@ -385,7 +385,7 @@ img[src*="airbnb"] {
 
 	.prev,
 	.next {
-		margin-top: -120px;
+		margin-top: -200px;
 	}
 }
 
@@ -393,7 +393,7 @@ img[src*="airbnb"] {
 
 	.prev,
 	.next {
-		margin-top: -200px;
+		margin-top: -300px;
 	}
 }
 
@@ -473,7 +473,12 @@ img.hover-shadow {
 	color: white;
 }
 
-.media-body > p.animated {
+p.animated > a {
+	text-align: center;
+	color: white;
+}
+
+p.animated {
 	text-align: center;
 }
 
@@ -520,6 +525,16 @@ a[href="privacy.html"] {
 
 .policy {
 	text-align: center;
+}
+
+.panel-body > p,
+.panel-body > ul > li {
+	color: black;
+	margin: 10px;
+}
+
+#privacy {
+	min-height: 100vh;
 }
 
 /* FOOTER */
